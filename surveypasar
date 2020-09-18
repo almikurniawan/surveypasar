@@ -1,0 +1,733 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.5
+-- Dumped by pg_dump version 10.5
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: migrations; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.migrations (
+    id bigint NOT NULL,
+    version character varying(255) NOT NULL,
+    class text NOT NULL,
+    "group" character varying(255) NOT NULL,
+    namespace character varying(255) NOT NULL,
+    "time" integer NOT NULL,
+    batch integer NOT NULL
+);
+
+
+ALTER TABLE public.migrations OWNER TO postgres;
+
+--
+-- Name: migrations_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.migrations_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.migrations_id_seq OWNER TO postgres;
+
+--
+-- Name: migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.migrations_id_seq OWNED BY public.migrations.id;
+
+
+--
+-- Name: ref_pasar; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.ref_pasar (
+    ref_pasar_id integer NOT NULL,
+    ref_pasar_label character varying(255)
+);
+
+
+ALTER TABLE public.ref_pasar OWNER TO postgres;
+
+--
+-- Name: ref_pasar_ref_pasar_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.ref_pasar_ref_pasar_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.ref_pasar_ref_pasar_id_seq OWNER TO postgres;
+
+--
+-- Name: ref_pasar_ref_pasar_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.ref_pasar_ref_pasar_id_seq OWNED BY public.ref_pasar.ref_pasar_id;
+
+
+--
+-- Name: ref_produk; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.ref_produk (
+    ref_produk_id integer NOT NULL,
+    ref_produk_label character varying
+);
+
+
+ALTER TABLE public.ref_produk OWNER TO postgres;
+
+--
+-- Name: ref_produk_ref_produk_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.ref_produk_ref_produk_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.ref_produk_ref_produk_id_seq OWNER TO postgres;
+
+--
+-- Name: ref_produk_ref_produk_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.ref_produk_ref_produk_id_seq OWNED BY public.ref_produk.ref_produk_id;
+
+
+--
+-- Name: ref_produk_varian; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.ref_produk_varian (
+    ref_produk_var_id integer NOT NULL,
+    ref_produk_var_label character varying,
+    ref_produk_var_produk_id integer
+);
+
+
+ALTER TABLE public.ref_produk_varian OWNER TO postgres;
+
+--
+-- Name: ref_produk_variant_ref_produk_variant_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.ref_produk_variant_ref_produk_variant_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.ref_produk_variant_ref_produk_variant_id_seq OWNER TO postgres;
+
+--
+-- Name: ref_produk_variant_ref_produk_variant_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.ref_produk_variant_ref_produk_variant_id_seq OWNED BY public.ref_produk_varian.ref_produk_var_id;
+
+
+--
+-- Name: seller; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.seller (
+    seller_id integer NOT NULL,
+    seller_nama character varying,
+    seller_pasar_id integer,
+    seller_alamat character varying,
+    seller_no_hp character varying(255)
+);
+
+
+ALTER TABLE public.seller OWNER TO postgres;
+
+--
+-- Name: seller_produk; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.seller_produk (
+    seller_prod_id integer NOT NULL,
+    seller_prod_seller_id integer,
+    seller_prod_produk_var_id integer
+);
+
+
+ALTER TABLE public.seller_produk OWNER TO postgres;
+
+--
+-- Name: seller_produk_seller_prod_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.seller_produk_seller_prod_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.seller_produk_seller_prod_id_seq OWNER TO postgres;
+
+--
+-- Name: seller_produk_seller_prod_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.seller_produk_seller_prod_id_seq OWNED BY public.seller_produk.seller_prod_id;
+
+
+--
+-- Name: seller_seller_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.seller_seller_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.seller_seller_id_seq OWNER TO postgres;
+
+--
+-- Name: seller_seller_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.seller_seller_id_seq OWNED BY public.seller.seller_id;
+
+
+--
+-- Name: survey_detail; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.survey_detail (
+    survey_det_id integer NOT NULL,
+    survey_det_head_id integer,
+    survey_det_tanggal date,
+    survey_det_seller_id integer,
+    survey_det_produk_var_id integer,
+    survey_det_harga real DEFAULT 0,
+    survey_det_created_at timestamp(6) without time zone DEFAULT now(),
+    survey_det_created_by integer
+);
+
+
+ALTER TABLE public.survey_detail OWNER TO postgres;
+
+--
+-- Name: survey_detail_survey_det_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.survey_detail_survey_det_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.survey_detail_survey_det_id_seq OWNER TO postgres;
+
+--
+-- Name: survey_detail_survey_det_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.survey_detail_survey_det_id_seq OWNED BY public.survey_detail.survey_det_id;
+
+
+--
+-- Name: survey_header; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.survey_header (
+    survey_head_id integer NOT NULL,
+    survey_head_tanggal date,
+    survey_head_seller_id integer,
+    survey_head_created_at timestamp without time zone DEFAULT now(),
+    survey_head_created_by integer
+);
+
+
+ALTER TABLE public.survey_header OWNER TO postgres;
+
+--
+-- Name: survey_header_survey_head_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.survey_header_survey_head_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.survey_header_survey_head_id_seq OWNER TO postgres;
+
+--
+-- Name: survey_header_survey_head_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.survey_header_survey_head_id_seq OWNED BY public.survey_header.survey_head_id;
+
+
+--
+-- Name: user; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public."user" (
+    user_id integer NOT NULL,
+    user_name character varying,
+    user_password character varying(255),
+    user_kar_id integer,
+    user_disable boolean,
+    user_created_at timestamp(6) without time zone
+);
+
+
+ALTER TABLE public."user" OWNER TO postgres;
+
+--
+-- Name: user_user_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.user_user_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.user_user_id_seq OWNER TO postgres;
+
+--
+-- Name: user_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.user_user_id_seq OWNED BY public."user".user_id;
+
+
+--
+-- Name: migrations id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.migrations ALTER COLUMN id SET DEFAULT nextval('public.migrations_id_seq'::regclass);
+
+
+--
+-- Name: ref_pasar ref_pasar_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.ref_pasar ALTER COLUMN ref_pasar_id SET DEFAULT nextval('public.ref_pasar_ref_pasar_id_seq'::regclass);
+
+
+--
+-- Name: ref_produk ref_produk_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.ref_produk ALTER COLUMN ref_produk_id SET DEFAULT nextval('public.ref_produk_ref_produk_id_seq'::regclass);
+
+
+--
+-- Name: ref_produk_varian ref_produk_var_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.ref_produk_varian ALTER COLUMN ref_produk_var_id SET DEFAULT nextval('public.ref_produk_variant_ref_produk_variant_id_seq'::regclass);
+
+
+--
+-- Name: seller seller_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.seller ALTER COLUMN seller_id SET DEFAULT nextval('public.seller_seller_id_seq'::regclass);
+
+
+--
+-- Name: seller_produk seller_prod_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.seller_produk ALTER COLUMN seller_prod_id SET DEFAULT nextval('public.seller_produk_seller_prod_id_seq'::regclass);
+
+
+--
+-- Name: survey_detail survey_det_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.survey_detail ALTER COLUMN survey_det_id SET DEFAULT nextval('public.survey_detail_survey_det_id_seq'::regclass);
+
+
+--
+-- Name: survey_header survey_head_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.survey_header ALTER COLUMN survey_head_id SET DEFAULT nextval('public.survey_header_survey_head_id_seq'::regclass);
+
+
+--
+-- Name: user user_id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."user" ALTER COLUMN user_id SET DEFAULT nextval('public.user_user_id_seq'::regclass);
+
+
+--
+-- Data for Name: migrations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.migrations (id, version, class, "group", namespace, "time", batch) FROM stdin;
+1	2020-09-18-085812	App\\Database\\Migrations\\Database	default	App	1600419560	1
+\.
+
+
+--
+-- Data for Name: ref_pasar; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.ref_pasar (ref_pasar_id, ref_pasar_label) FROM stdin;
+3	Pasar Bandar
+4	Pasar Dandangan
+5	Pasar Induk
+7	Pasar Pahing
+\.
+
+
+--
+-- Data for Name: ref_produk; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.ref_produk (ref_produk_id, ref_produk_label) FROM stdin;
+4	GULA PASIR
+2	MINYAK GORENG
+1	BERAS
+3	DAGING
+5	KRUPUK
+\.
+
+
+--
+-- Data for Name: ref_produk_varian; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.ref_produk_varian (ref_produk_var_id, ref_produk_var_label, ref_produk_var_produk_id) FROM stdin;
+1	Bengawan	1
+2	Mentik	1
+3	IR 64	1
+4	Gula Pasir Dalam Negri	4
+5	Bimoli Botol / Kemasan (Sps) 620 ml	2
+6	Bimoli botol/Kemasan (sps) 2 liter	2
+7	Tanpa Merk / Minyak Curah	2
+8	Minyak Goreng Bimoli Botol/Kemasan (sps) 1 Liter	2
+9	Daging Sapi Murni	3
+10	Daging Ayam Broiler	3
+11	Daging Ayam Kampung	3
+12	Krupuk Bawang	5
+\.
+
+
+--
+-- Data for Name: seller; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.seller (seller_id, seller_nama, seller_pasar_id, seller_alamat, seller_no_hp) FROM stdin;
+4	Arsy	4	test	123123
+7	Siti	5	kediri	892735973
+3	Fara	3	Tulungagung	08832131874321
+6	Siti	4	kediri	08986745
+5	Liyan	3	Kediri	089867576
+2	Yusuf	4	Punjul	45312123141234
+1	Almi	5	Manukan Jabon	0999789
+8	Farhan	7	Kediri	0875456789
+\.
+
+
+--
+-- Data for Name: seller_produk; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.seller_produk (seller_prod_id, seller_prod_seller_id, seller_prod_produk_var_id) FROM stdin;
+1	1	1
+2	1	2
+3	1	3
+4	1	4
+5	1	5
+6	1	6
+7	1	7
+8	1	8
+9	1	9
+10	1	10
+11	1	11
+12	2	1
+13	2	2
+14	2	3
+15	2	4
+16	2	5
+17	2	6
+18	2	7
+19	2	8
+20	2	9
+21	2	10
+22	2	11
+23	3	11
+24	3	10
+25	3	9
+26	3	7
+27	3	5
+28	3	4
+29	3	2
+30	3	3
+31	5	11
+32	5	9
+33	5	7
+34	5	8
+35	5	10
+36	5	5
+37	4	11
+38	4	9
+39	4	8
+40	4	7
+41	4	6
+42	4	10
+43	4	4
+44	7	4
+45	7	6
+46	7	8
+47	7	10
+48	7	12
+49	7	11
+50	6	12
+51	6	11
+52	6	11
+53	6	10
+54	6	9
+55	6	8
+56	6	8
+57	6	7
+58	6	6
+59	6	5
+60	8	11
+61	8	10
+62	8	12
+63	8	9
+\.
+
+
+--
+-- Data for Name: survey_detail; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.survey_detail (survey_det_id, survey_det_head_id, survey_det_tanggal, survey_det_seller_id, survey_det_produk_var_id, survey_det_harga, survey_det_created_at, survey_det_created_by) FROM stdin;
+115	19	2020-09-17	8	9	100000	2020-09-17 16:03:52.200776	1
+116	19	2020-09-17	8	10	35000	2020-09-17 16:03:52.200776	1
+117	19	2020-09-17	8	11	50000	2020-09-17 16:03:52.200776	1
+118	19	2020-09-17	8	12	10000	2020-09-17 16:03:52.200776	1
+119	20	2020-09-17	1	1	10000	2020-09-17 16:04:18.312183	1
+120	20	2020-09-17	1	2	9000	2020-09-17 16:04:18.312183	1
+121	20	2020-09-17	1	3	9400	2020-09-17 16:04:18.312183	1
+122	20	2020-09-17	1	4	0	2020-09-17 16:04:18.312183	1
+123	20	2020-09-17	1	5	0	2020-09-17 16:04:18.312183	1
+124	20	2020-09-17	1	6	0	2020-09-17 16:04:18.312183	1
+125	20	2020-09-17	1	7	0	2020-09-17 16:04:18.312183	1
+126	20	2020-09-17	1	8	0	2020-09-17 16:04:18.312183	1
+127	20	2020-09-17	1	9	0	2020-09-17 16:04:18.312183	1
+128	20	2020-09-17	1	10	0	2020-09-17 16:04:18.312183	1
+129	20	2020-09-17	1	11	0	2020-09-17 16:04:18.312183	1
+\.
+
+
+--
+-- Data for Name: survey_header; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.survey_header (survey_head_id, survey_head_tanggal, survey_head_seller_id, survey_head_created_at, survey_head_created_by) FROM stdin;
+19	2020-09-17	8	2020-09-17 16:03:52.136395	1
+20	2020-09-17	1	2020-09-17 16:04:18.309015	1
+\.
+
+
+--
+-- Data for Name: user; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."user" (user_id, user_name, user_password, user_kar_id, user_disable, user_created_at) FROM stdin;
+1	admin	d033e22ae348aeb5660fc2140aec35850c4da997	0	f	2020-09-16 10:34:30.089515
+2	surveyor	d033e22ae348aeb5660fc2140aec35850c4da997	0	f	2020-09-16 10:34:30.089515
+\.
+
+
+--
+-- Name: migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.migrations_id_seq', 1, true);
+
+
+--
+-- Name: ref_pasar_ref_pasar_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.ref_pasar_ref_pasar_id_seq', 7, true);
+
+
+--
+-- Name: ref_produk_ref_produk_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.ref_produk_ref_produk_id_seq', 5, true);
+
+
+--
+-- Name: ref_produk_variant_ref_produk_variant_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.ref_produk_variant_ref_produk_variant_id_seq', 12, true);
+
+
+--
+-- Name: seller_produk_seller_prod_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.seller_produk_seller_prod_id_seq', 63, true);
+
+
+--
+-- Name: seller_seller_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.seller_seller_id_seq', 8, true);
+
+
+--
+-- Name: survey_detail_survey_det_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.survey_detail_survey_det_id_seq', 129, true);
+
+
+--
+-- Name: survey_header_survey_head_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.survey_header_survey_head_id_seq', 20, true);
+
+
+--
+-- Name: user_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.user_user_id_seq', 1, true);
+
+
+--
+-- Name: migrations pk_migrations; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.migrations
+    ADD CONSTRAINT pk_migrations PRIMARY KEY (id);
+
+
+--
+-- Name: ref_produk ref_produk_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.ref_produk
+    ADD CONSTRAINT ref_produk_pkey PRIMARY KEY (ref_produk_id);
+
+
+--
+-- Name: seller_produk seller_produk_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.seller_produk
+    ADD CONSTRAINT seller_produk_pkey PRIMARY KEY (seller_prod_id);
+
+
+--
+-- Name: survey_detail survey_detail_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.survey_detail
+    ADD CONSTRAINT survey_detail_pkey PRIMARY KEY (survey_det_id);
+
+
+--
+-- Name: survey_header survey_head_uniq; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.survey_header
+    ADD CONSTRAINT survey_head_uniq UNIQUE (survey_head_tanggal, survey_head_seller_id);
+
+
+--
+-- Name: survey_header survey_header_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.survey_header
+    ADD CONSTRAINT survey_header_pkey PRIMARY KEY (survey_head_id);
+
+
+--
+-- Name: user user_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."user"
+    ADD CONSTRAINT user_pkey PRIMARY KEY (user_id);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
