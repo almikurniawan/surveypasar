@@ -8,7 +8,7 @@
 	<meta name="author" content="Hartsimagineering.com">
 	<link rel="icon" href="./images/favicon/favicon-16x16.png">
 
-	<title>SISKAPERBAPO</title>
+	<title>SURVEY PASAR</title>
 	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 	<script src="./assets/kendo2020/js/jquery.min.js"></script>
 	<script src="./bootstrap4/js/bootstrap.min.js"></script>
@@ -152,7 +152,7 @@
 						<div class="card-body">
 							<div style="padding: 10px;">
 								<h1 class="h3 mb-3 font-weight-normal">
-									LOGIN SISKAPERBAPO
+									LOGIN SURVEY PASAR
 								</h1>
 							</div>
 							<form class="form-signin text-left" method="post" action="<?= base_url("login/auth")?>">

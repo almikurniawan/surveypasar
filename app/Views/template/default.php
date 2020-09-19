@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>SISKAPERBAKO</title>
+	<title>SURVEY PASAR</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -99,7 +99,7 @@
 <body>
 	<navigation class="fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand ml-1" href="<?= base_url("admin") ?>"> SISKAPERBAPO</a>
+			<a class="navbar-brand ml-1" href="<?= base_url("admin") ?>"> SURVEY PASAR</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
