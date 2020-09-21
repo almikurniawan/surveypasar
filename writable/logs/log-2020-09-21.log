@@ -1,0 +1,18 @@
+CRITICAL - 2020-09-21 02:34:52 --> Invalid file: admin/RefProdukVarian.php
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/RefProduk...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render('admin/RefProduk...', Array, true)
+#2 /var/www/html/surveypasar/app/Controllers/Admin/RefProdukVarian.php(30): view('admin/RefProduk...', Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefProdukVarian->index()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefProdukVarian))
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-21 02:34:55 --> Invalid file: admin/RefProdukVarian.php
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/RefProduk...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render('admin/RefProduk...', Array, true)
+#2 /var/www/html/surveypasar/app/Controllers/Admin/RefProdukVarian.php(30): view('admin/RefProduk...', Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefProdukVarian->index()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefProdukVarian))
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
