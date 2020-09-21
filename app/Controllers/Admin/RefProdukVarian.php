@@ -27,7 +27,7 @@ class RefProdukVarian extends BaseController
         $data['search'] = $this->search();
         $data['title']  = 'Produk Varian';
 
-        return view('admin/RefProdukVarian', $data);
+        return view('admin/refProdukVarian', $data);
     }
 
     public function grid()
