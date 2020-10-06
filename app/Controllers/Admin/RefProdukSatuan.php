@@ -118,8 +118,9 @@ class RefProdukSatuan extends BaseController
         }
 
         $form = new Form();
-        $form->set_attribute_form('class="form-horizontal"')->set_form_action(base_url(('admin/refProdukSatuan/form/' . $id)))
-            ->add('ref_produk_satuan_label', 'Nama Satuan', 'text', true, ($data) ? $data['ref_produk_satuan_label'] : '', 'style="width:100%;"');
+        $form->set_attribute_form('class="form-horizontal"')
+        ->set_form_action(base_url(('admin/refProdukSatuan/form/' . $id)))
+        ->add('ref_produk_satuan_label', 'Nama Satuan', 'text', true, ($data) ? $data['ref_produk_satuan_label'] : '', 'style="width:100%;"');
 
         if ($form->formVerified()) {
             if ($id != null) {
@@ -134,7 +135,6 @@ class RefProdukSatuan extends BaseController
                     'ref_produk_satuan_label'    => $this->request->getPost('ref_produk_satuan_label'),
                 );
                 $this->db->table('ref_produk_satuan')->insert($data_insert);
-                $id = $this->db->insertID();
                 $this->session->setFlashdata('success', 'Sukses Insert Baru');
                 die(forceRedirect(base_url('/admin/refProdukSatuan')));
             }

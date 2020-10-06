@@ -144,7 +144,6 @@ class AksesModul extends BaseController
                     'ref_modul_akses_label'    => $this->request->getPost('ref_modul_akses_label'),
                 );
                 $this->db->table('ref_modul_akses')->insert($data_insert);
-                $id = $this->db->insertID();
                 $this->session->setFlashdata('success', 'Sukses Insert Baru');
                 return $form->output();
                 // die(forceRedirect(base_url('/admin/aksesModul/edit/' . $id)));

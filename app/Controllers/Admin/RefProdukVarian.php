@@ -159,7 +159,6 @@ class RefProdukVarian extends BaseController
                     'ref_produk_var_satuan_id'    => $this->request->getPost('ref_produk_var_satuan_id'),
                 );
                 $this->db->table('ref_produk_varian')->insert($data_insert);
-                $id = $this->db->insertID();
                 $this->session->setFlashdata('success', 'Sukses Insert Baru');
                 die(forceRedirect(base_url('/admin/RefProdukVarian')));
             }

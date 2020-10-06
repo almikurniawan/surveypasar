@@ -134,7 +134,6 @@ class RefProduk extends BaseController
                     'ref_produk_label'    => $this->request->getPost('ref_produk_label'),
                 );
                 $this->db->table('ref_produk')->insert($data_insert);
-                $id = $this->db->insertID();
                 $this->session->setFlashdata('success', 'Sukses Insert Baru');
                 die(forceRedirect(base_url('/admin/refProduk')));
             }

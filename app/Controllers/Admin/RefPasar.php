@@ -134,9 +134,8 @@ class RefPasar extends BaseController
                     'ref_pasar_label'    => $this->request->getPost('ref_pasar_label'),
                 );
                 $this->db->table('ref_pasar')->insert($data_insert);
-                $id = $this->db->insertID();
                 $this->session->setFlashdata('success', 'Sukses Insert Baru');
-                die(forceRedirect(base_url('/admin/refPasar/edit/' . $id)));
+                die(forceRedirect(base_url('/admin/refPasar/')));
             }
         } else {
             return $form->output();
