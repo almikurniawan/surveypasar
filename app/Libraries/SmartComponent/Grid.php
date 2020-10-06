@@ -2,6 +2,7 @@
 namespace App\Libraries\SmartComponent;
 
 use App\Libraries\SmartComponent\Datasource;
+use App\Libraries\SmartComponent\Report;
 class Grid{
     protected $response;
     protected $template     = 'template/default_smart_grid';
@@ -15,6 +16,8 @@ class Grid{
         'detail'    => 'eye'
     );
     protected $uniq_id = null;
+    protected $row_start    = 3;
+    protected $header       = array('A1'=> 'Report');
 
     public function __construct()
     {
@@ -40,7 +43,9 @@ class Grid{
                     'width'=>50
                 )
             ),
-            'action'        => array()
+            'action'        => array(),
+            'toolbar'       => array(),
+            'download_url'  => base_url(uri_string()) . '?download&' . get_query_string()
         );
         foreach ($config as $key => $value) {
             $this->config[$key] = $value;
@@ -88,13 +93,28 @@ class Grid{
         return $this;
     }
 
+    public function set_header($header)
+    {
+        $this->header = $header;
+        return $this;
+    }
+
+    public function set_row_start($row_start)
+    {
+        $this->row_start = $row_start;
+        return $this;
+    }
+
     public function output()
     {
         if(isset($_GET['datasource'])){
             $this->get_datasource();
         }
-        $columns = array();
 
+        if(isset($_GET['download'])){
+            $this->download();
+        }
+        $columns = array();
         
         foreach ($this->config['grid_columns'] as $key => $value) {
             if(isset($value['align'])){
@@ -141,6 +161,18 @@ class Grid{
             }
         }
         die(json_encode($data));
+    }
+
+    public function download()
+    {
+        $report = new Report();
+        $report->set_query($this->SQL, $this->whereClause)
+        ->set_sort($this->sort)
+        ->set_column($this->config['grid_columns'])
+        ->set_row_start($this->row_start)
+        ->set_header($this->header);
+        $excel = $report->output();
+        return $excel;
     }
 
 }

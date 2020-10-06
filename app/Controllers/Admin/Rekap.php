@@ -2,19 +2,6 @@
 
 namespace App\Controllers\Admin;
 
-/**
- * Class BaseController
- *
- * BaseController provides a convenient place for loading components
- * and performing functions that are needed by all your controllers.
- * Extend this class in any new controllers:
- *     class Home extends BaseController
- *
- * For security be sure to declare any new methods as protected or private.
- *
- * @package CodeIgniter
- */
-
 use App\Controllers\BaseController;
 use App\Libraries\SmartComponent\Grid;
 use App\Libraries\SmartComponent\Form;
@@ -25,6 +12,7 @@ class Rekap extends BaseController
     {
         $data['grid'] = $this->gridRekap();
         $data['search'] = $this->search();
+        $data['tanggal'] = ($this->request->getGet('tanggal')=='' ? date("Y-m-d") : $this->request->getGet('tanggal'));
         return view('admin/rekap', $data);
     }
 
@@ -43,7 +31,6 @@ class Rekap extends BaseController
             $where          = "";
             $pasar_url      = "/0";
         }
-        // die($new_tanggal);
         $SQL    = "SELECT
                         ref_produk_label||' - '||ref_produk_var_label as nama_bahan,
 	                    ref_produk_label,
@@ -73,9 +60,16 @@ class Rekap extends BaseController
                             'format'=> 'number',
                             'align' => 'right'
                         )
-                    )
+                    ),
+                    'action'=> array(
+                        'detail'    => array('jsf'=> 'detail')
+                    ),
+                    'toolbar'    => array('download')
                 )
-            )->output();
+            )
+            ->set_row_start(3)
+            ->set_header(array('A1'=> 'Rekap'))
+            ->output();
     }
 
     public function search()
@@ -93,5 +87,57 @@ class Rekap extends BaseController
             )
         )
         ->output();
+    }
+
+    public function detail($tanggal, $produk_id)
+    {
+        $data['grid'] = $this->gridRekapDetail($tanggal, $produk_id);
+        return view('admin/rekap_detail', $data);
+    }
+    
+    public function gridRekapDetail($tanggal, $produk_id)
+    {
+        $SQL    = "SELECT
+                        survey_detail.* ,
+                        public.user.user_namalengkap,
+                        seller_nama,
+	                    ref_pasar_label
+                    FROM
+                        survey_detail 
+                        left join survey_header on survey_header.survey_head_id = survey_detail.survey_det_head_id
+                        left join public.user on public.user.user_id = survey_header.survey_head_created_by
+                        left join seller on survey_det_seller_id = seller_id
+	                    left join ref_pasar on ref_pasar_id = seller_pasar_id
+                    WHERE
+                        survey_detail.survey_det_tanggal = '".$tanggal."' 
+                        AND survey_detail.survey_det_produk_var_id = ".$produk_id;
+        $grid   = new Grid();
+        return $grid->set_query($SQL)
+            ->set_sort(array('seller_nama','asc'))
+            ->configure(
+                array(
+                    'datasouce_url' => base_url("admin/rekap/gridRekapDetail/".$tanggal."/".$produk_id."?datasource&" . get_query_string()),
+                    'grid_columns'  => array(
+                        array(
+                            'field' => 'seller_nama',
+                            'title' => 'Pedagang'
+                        ),
+                        array(
+                            'field' => 'ref_pasar_label',
+                            'title' => 'Pasar'
+                        ),
+                        array(
+                            'field' => 'survey_det_harga',
+                            'title' => 'HARGA (Rp)',
+                            'format'=> 'number',
+                            'align' => 'right'
+                        ),
+                        array(
+                            'field' => 'user_namalengkap',
+                            'title' => 'Surveyor'
+                        ),
+                    ),
+                )
+            )->output();
     }
 }

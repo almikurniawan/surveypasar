@@ -11,7 +11,7 @@ class Login extends BaseController
 	{
 		$user_name 		= addslashes($this->request->getPost('username'));
 		$user_password 	= $this->request->getPost('password');
-		$sql 			= $this->db->query("select * from public.user where user_name='".$user_name."' and user_password='".sha1($user_password)."'");
+		$sql 			= $this->db->query("select * from public.user where public.user.user_name='".$user_name."' and public.user.user_password='".sha1($user_password)."'");
 		$data 			= $sql->getRowArray();
 		if(!empty($data)){
 			$this->session->set('user', $data);

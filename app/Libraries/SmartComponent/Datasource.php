@@ -6,7 +6,6 @@ class Datasource
     protected $SQL          = "";
     protected $sort         = array('id', 'asc');
     protected $whereClause  = array();
-    protected $CI;
 
     public function __construct()
     {
@@ -28,7 +27,7 @@ class Datasource
         foreach ($this->whereClause as $value) {
             if ($value[1] != '') {
                 if (!isset($value[2])) {
-                    array_push($whereClause, "lower(" . $value[0] . " )like '%" . strtolower($value[1]) . "%'");
+                    array_push($whereClause, "lower(" . $value[0] . " ) like '%" . strtolower($value[1]) . "%'");
                 } else if (in_array(trim(strtolower($value[2])),array('not in', 'in'))) {
                     array_push($whereClause, $value[0] . " " . $value[2] . " " . $value[1] . "");
                 }else {
@@ -82,7 +81,7 @@ class Datasource
         return array(
             'total'     => (int)$total['total'],
             'result'    => $data,
-            'sql'       => $this->SQL
+            // 'sql'       => $this->SQL
         );
     }
 }

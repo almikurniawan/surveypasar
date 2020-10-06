@@ -10,6 +10,18 @@
         }
         ?>
     </div>
+    <div class="col-sm-6">
+        <?php
+        if(!empty($toolbar)){
+            foreach($toolbar as $key=> $value){
+                if($key=='download'){
+                    echo '<a target="_blank" class="btn btn-sm btn-success float-right" href="'.$download_url.'"><i class="k-icon k-i-download"></i> Download</a>';
+                }
+                
+            }
+        }
+        ?>
+    </div>
 </div>
 <div class="row">
     <div class="col-sm-12">
@@ -92,6 +104,7 @@ $columns = preg_replace($re, '"template":kendo.template$1,', $columns);
         // height: "<?= $grid_height?>",
         scrollable : false,
         groupable: false,
+        // toolbar: '<input type="checkbox" />',
         sortable: {
             mode: "multiple",
             allowUnsort: true,

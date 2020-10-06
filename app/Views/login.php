@@ -19,8 +19,11 @@
 		}
 
 		body {
-			background: #e91e63;
-			background: linear-gradient(to right, #e91e63, #ff568e);
+			background-image: url(./assets/images/bg.jpg);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
 		}
 
 		.card-signin {

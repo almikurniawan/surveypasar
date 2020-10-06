@@ -10,8 +10,13 @@
 	<link rel="stylesheet" href="<?= base_url("/assets/material.css"); ?>" />
 
 
+	<!-- <link rel="stylesheet" href="<?= base_url("/assets/kendo/styles/kendo.common.min.css") ?>" /> -->
+    <!-- <link rel="stylesheet" href="<?= base_url("/assets/kendo/styles/kendo.default.min.css") ?>" /> -->
+    <link rel="stylesheet" href="<?= base_url("/assets/kendo/styles/kendo.default.mobile.min.css") ?>" />
+    
 	<script src="<?= base_url("/assets/kendo/js/jquery.min.js") ?>"></script>
-	<script src="<?= base_url("/assets/kendo/js/kendo.web.min.js") ?>"></script>
+    <script src="<?= base_url("/assets/kendo/js/kendo.all.min.js") ?>"></script>
+	<!-- <script src="<?= base_url("/assets/kendo/js/kendo.web.min.js") ?>"></script> -->
 	<script src="<?= base_url("/assets/kendo/js/cultures/kendo.culture.id-ID.min.js") ?>"></script>
 
 	<script src="<?= base_url("/assets/bootstrap/js/bootstrap.min.js") ?>"></script>
@@ -48,6 +53,14 @@
 	</script>
 
 	<style>
+		body {
+			background-image: url(<?= base_url('/assets/images/bg.jpg') ?>);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
 		.bg-light {
 			background-color: #e91e63 !important;
 		}
@@ -86,11 +99,11 @@
 			padding-right: 15px;
 		}
 
-		li.k-current-page{
+		li.k-current-page {
 			display: none;
 		}
 
-		.red{
+		.red {
 			color: red;
 		}
 	</style>
@@ -100,8 +113,7 @@
 	<navigation class="fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand ml-1" href="<?= base_url("admin") ?>"> SURVEY PASAR</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -111,6 +123,7 @@
 		</nav>
 		<nav id="breadcrumb"></nav>
 	</navigation>
+
 	<div class="container mt-5 pt-5 mb-3">
 		<?= $this->renderSection('content') ?>
 	</div>
