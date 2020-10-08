@@ -3,8 +3,6 @@
 namespace App\Controllers\Api;
 
 use App\Controllers\BaseController;
-use App\Libraries\SmartComponent\Grid;
-use App\Libraries\SmartComponent\Form;
 
 class Komoditas extends BaseController
 {
