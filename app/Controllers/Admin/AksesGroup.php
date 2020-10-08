@@ -134,9 +134,8 @@ class AksesGroup extends BaseController
                     'ref_group_akses_label'    => $this->request->getPost('ref_group_akses_label'),
                 );
                 $this->db->table('ref_group_akses')->insert($data_insert);
-                $id = $this->db->insertID();
                 $this->session->setFlashdata('success', 'Sukses Insert Baru');
-                die(forceRedirect(base_url('/admin/aksesGroup/edit/' . $id)));
+                die(forceRedirect(base_url('/admin/aksesGroup/')));
             }
         } else {
             return $form->output();
