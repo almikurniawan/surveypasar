@@ -13,7 +13,7 @@ class Komoditas extends BaseController
                                             ref_produk_var_id AS id_barang,
                                             ref_produk_var_label AS nama_barang,
                                             '".$tanggal."' AS tanggal,
-                                            (select avg(survey_detail.survey_det_harga) from survey_detail where survey_det_tanggal='".$tanggal."' and survey_det_produk_var_id = ref_produk_var_id) as harga
+                                            (select avg(survey_detail.survey_det_harga) from survey_detail where to_char(survey_det_tanggal,'YYYY-MM-DD')='".$tanggal."' and survey_det_produk_var_id = ref_produk_var_id) as harga
                                         FROM
                                             ref_produk_varian")->getResult('array');
         if(!empty($data)){
