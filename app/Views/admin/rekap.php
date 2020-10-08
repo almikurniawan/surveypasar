@@ -12,4 +12,9 @@
         </div>
     </div>
 </div>
+<script>
+    function detail(id){
+        showForm('800','600','_new','<?=base_url('admin/rekap/detail/'.$tanggal)?>/'+id);
+    }
+</script>
 <?= $this->endSection() ?>

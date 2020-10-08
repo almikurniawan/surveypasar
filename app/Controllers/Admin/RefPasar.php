@@ -89,7 +89,7 @@ class RefPasar extends BaseController
     {
         $id = $this->request->getPost('id');
         $cek = $this->db->table('seller')->getWhere(['seller_pasar_id' => $id])->getRowArray();
-        if ($cek) {
+        if ($cek == null) {
             $this->db->table('ref_pasar')->delete(['ref_pasar_id' => $id]);
             return $this->response->setJSON(
                 array(

@@ -35,7 +35,7 @@ class Database extends \CodeIgniter\Database\Config
 		'hostname' => 'localhost',
 		'username' => 'postgres',
 		'password' => 'root',
-		'database' => 'survey',
+		'database' => 'survey1',
 		'DBDriver' => 'Postgre',
 		'DBPrefix' => '',
 		'pConnect' => false,

@@ -89,7 +89,7 @@ class RefProduk extends BaseController
     {
         $id = $this->request->getPost('id');
         $cek = $this->db->table('ref_produk_varian')->getWhere(['ref_produk_var_produk_id' => $id])->getRowArray();
-        if($cek){
+        if ($cek == null) {
             $this->db->table('ref_produk')->delete(['ref_produk_id' => $id]);
             return $this->response->setJSON(
                 array(

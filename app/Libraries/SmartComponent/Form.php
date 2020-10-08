@@ -113,6 +113,8 @@ class Form{
 
         if($type=='text'){
             $field = '<input type="text" class="k-textbox" name="'.$name.'" id="'.$name.'" value="'.$value.'" '.$extraAttribute.' />';
+        }else if($type=='hidden'){
+            $field = '<input type="hidden" name="'.$name.'" value="'.$value.'" '.$extraAttribute.' />';
         }else if($type=='password'){
             $field = '<input type="password" class="k-textbox" name="'.$name.'" id="'.$name.'" value="'.$value.'" '.$extraAttribute.' />';
         }else if($type=='textArea'){
@@ -126,6 +128,10 @@ class Form{
         }else if($type=='date'){
             $field = '<input name="'.$name.'" id="'.$name.'" value="'.$value.'" '.$extraAttribute.' />
             <script type="text/javascript">$(document).ready(function(){$("#'.$name.'").kendoDatePicker({format:"yyyy-MM-dd", parseFormat:["yyyy-mm-dd", "d m yyyy", "d m y", "dd/mm/yyyy", "dd MM yyyy", "dd-MM-yyyy", "d MM yyyy", "dd MMM yyyy"]  });});</script>
+            ';
+        }else if($type=='month'){
+            $field = '<input name="'.$name.'" id="'.$name.'" value="'.$value.'" '.$extraAttribute.' />
+            <script type="text/javascript">$(document).ready(function(){$("#'.$name.'").kendoDatePicker({start: "year", depth: "year", format: "yyyy-MM", dateInput: true});});</script>
             ';
         }else if($type=='file'){
             $field = '<input type="file" name="'.$name.'" value="'.$value.'" '.$extraAttribute.'/>';
@@ -174,6 +180,25 @@ class Form{
             ';
 
             $field = '<input type="text" id="'.$name.'" name="'.$name.'" '.$extraAttribute.' />'.$js;
+        } else if($type=='select_multiple'){
+            $option = '';
+            $where = '  ';
+            if(isset($attribute_select['where'])){
+                $where .= ' where ' . $attribute_select['where'];
+            }
+            
+            $order_by = '';
+            if(isset($attribute_select['sort'])){
+                $order_by .= ' order by ' . $attribute_select['sort'];
+            }
+
+            $data = $this->db->query("select ".$attribute_select['id']." as id, ".$attribute_select['label']." as label from ".$attribute_select['table'] . $where . $order_by)->getResult('array');
+            foreach ($data as $key => $v) {
+                $selected = (in_array($v['id'], $value)) ? 'selected="selected"' : '';
+                $option .= '<option '.$selected.' value="'.$v['id'].'">'.$v['label'].'</option>';
+            }
+
+            $field = '<select name="'.$name.'[]" id="'.$name.'" '.$extraAttribute.' multiple="multiple">'.$option.'</select><script type="text/javascript">$(document).ready(function(){$("#'.$name.'").kendoMultiSelect({autoClose: false,placeholder: "Please select"}).data("kendoMultiSelect");});</script>';
         }
 
         if($required){
