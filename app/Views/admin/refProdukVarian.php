@@ -16,7 +16,7 @@
 <script>
     function deleteProduk(id) {
         kendo.confirm("Yakin ingin delete data ini?").then(function() {
-            $.post("<?= base_url('admin/refProduk/delete') ?>", {
+            $.post("<?= base_url('admin/refProdukVarian/delete') ?>", {
                 id: id
             }, function(result) {
                 if (result.status) {
