@@ -78,7 +78,7 @@ class RefSeller extends BaseController
         left join ref_produk_varian on ref_produk_var_id = seller_prod_produk_var_id";
 
         $action['delete']     = array(
-            'link'          => 'admin/refSeller/delete/'
+            'link'          => 'admin/refSeller/deleteDagangan/'.$id.'/'
         );
 
         $grid = new Grid();
@@ -99,6 +99,12 @@ class RefSeller extends BaseController
                     // 'head_left'        => array('add' => '/admin/refSeller/add')
                 )
             )->output();
+    }
+
+    public function deleteDagangan($seller_id, $dagangan_id)
+    {
+        $this->db->table("seller_produk")->where(['seller_prod_id'=>$dagangan_id])->delete();
+        return redirect()->to(base_url("admin/refSeller/detail/".$seller_id));
     }
 
     public function search()
