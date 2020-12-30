@@ -225,9 +225,10 @@ class RefSeller extends BaseController
     }
     public function grid_pilih_produk($id)
     {
-        $SQL = "select ref_produk_var_id AS ID,*, concat('<button class=\"btn btn-success btn-xs\" onclick=\"pilih(',ref_produk_var_id,')\"><i class=\"k-i-check-outline\">pilih</button>') as pilih
+        $SQL = "select ref_produk_var_id AS ID, * , concat('<button class=\"btn btn-success btn-xs\" onclick=\"pilih(',ref_produk_var_id,')\"><i class=\"k-i-check-outline\">pilih</button>') as pilih
         FROM
         ref_produk_varian
+        left join ref_produk_satuan on ref_produk_satuan_id = ref_produk_var_satuan_id
         ";
         $grid = new Grid();
         return $grid->set_query($SQL,array(
@@ -243,6 +244,10 @@ class RefSeller extends BaseController
                         array(
                             'field' => 'ref_produk_var_label',
                             'title' => 'Nama Produk',
+                        ),
+                        array(
+                            'field' => 'ref_produk_satuan_label',
+                            'title' => 'Satuan',
                         ),
                         array(
                             'field' => 'pilih',
