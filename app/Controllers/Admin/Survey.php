@@ -145,7 +145,7 @@ class Survey extends BaseController
         $header = $this->db->query("select * from survey_header where survey_head_id=".$head_id)->getRowArray();
         $seller_id = $header['survey_head_seller_id'];
         $tanggal = $header['survey_head_tanggal'];
-        $produk_seller = $this->db->query("select ref_produk_var_id, ref_produk_var_label, survey_det_harga, '( '||ref_produk_satuan_label||' )' as ref_produk_satuan_label from seller_produk left join ref_produk_varian on seller_prod_produk_var_id = ref_produk_var_id left join ref_produk_satuan on ref_produk_satuan_id = ref_produk_varian.ref_produk_var_satuan_id left join survey_detail on survey_det_head_id = ".$head_id." and survey_det_produk_var_id = ref_produk_var_id where seller_prod_seller_id=".$seller_id)->getResult('array');
+        $produk_seller = $this->db->query("select ref_produk_var_id, ref_produk_var_label, survey_det_harga, '( '||ref_produk_satuan_label||' )' as ref_produk_satuan_label from seller_produk left join ref_produk_varian on seller_prod_produk_var_id = ref_produk_var_id left join ref_produk_satuan on ref_produk_satuan_id = ref_produk_varian.ref_produk_var_satuan_id left join survey_detail on survey_det_head_id = ".$head_id." and survey_det_produk_var_id = ref_produk_var_id where seller_prod_seller_id=".$seller_id)->getResult('array')." order by ref_produk_urutan asc, ref_produk_var_urutan asc";
 
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')

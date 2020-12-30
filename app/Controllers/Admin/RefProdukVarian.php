@@ -54,6 +54,10 @@ class RefProdukVarian extends BaseController
                     'datasouce_url' => base_url("admin/RefProdukVarian/grid?datasource&" . get_query_string()),
                     'grid_columns'  => array(
                         array(
+                            'field' => 'ref_produk_var_urutan',
+                            'title' => 'Urutan',
+                        ),
+                        array(
                             'field' => 'ref_produk_var_label',
                             'title' => 'Nama Varian',
                         ),
@@ -140,7 +144,8 @@ class RefProdukVarian extends BaseController
                 'table' => 'ref_produk_satuan',
                 'id' => 'ref_produk_satuan_id',
                 'label' => 'ref_produk_satuan_label',
-            ));
+            ))
+            ->add('ref_produk_var_urutan', 'Urutan', 'number', true, ($data) ? $data['ref_produk_var_urutan'] : '', 'style="width:100%;"');
 
         if ($form->formVerified()) {
             if ($id != null) {
@@ -148,6 +153,7 @@ class RefProdukVarian extends BaseController
                     'ref_produk_var_produk_id'    => $this->request->getPost('ref_produk_var_produk_id'),
                     'ref_produk_var_label'    => $this->request->getPost('ref_produk_var_label'),
                     'ref_produk_var_satuan_id'    => $this->request->getPost('ref_produk_var_satuan_id'),
+                    'ref_produk_var_urutan'    => $this->request->getPost('ref_produk_var_urutan'),
                 );
                 $this->db->table('ref_produk_varian')->where('ref_produk_var_id', $id)->update($data_update);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');
@@ -157,6 +163,7 @@ class RefProdukVarian extends BaseController
                     'ref_produk_var_produk_id'    => $this->request->getPost('ref_produk_var_produk_id'),
                     'ref_produk_var_label'    => $this->request->getPost('ref_produk_var_label'),
                     'ref_produk_var_satuan_id'    => $this->request->getPost('ref_produk_var_satuan_id'),
+                    'ref_produk_var_urutan'    => $this->request->getPost('ref_produk_var_urutan'),
                 );
                 $this->db->table('ref_produk_varian')->insert($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Insert Baru');

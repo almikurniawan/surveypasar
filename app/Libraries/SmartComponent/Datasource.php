@@ -52,7 +52,7 @@ class Datasource
     public function run()
     {
         $page = (int)$_GET['page'];
-        $pageSize = (int)$_GET['pageSize'];
+        $pageSize = (isset($_GET['pageSize']) ? $_GET['pageSize'] : -1);
 
         //limit
         $limit  = $pageSize;
@@ -68,7 +68,10 @@ class Datasource
         }
         $order_by = " order by " . implode(", ", $sort);
 
-        $SQL    = $this->SQL . $order_by . " limit " . $limit . " offset " . $offset;
+        $SQL    = $this->SQL . $order_by ;
+        if($pageSize>=0){
+            $SQL .= " limit " . $limit . " offset " . $offset;
+        }
 
         $query  = $this->db->query($SQL);
         $data   = $query->getResult('array');

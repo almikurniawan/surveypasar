@@ -54,6 +54,10 @@ class RefProduk extends BaseController
                             'field' => 'ref_produk_label',
                             'title' => 'Nama produk',
                         ),
+                        array(
+                            'field' => 'ref_produk_urutan',
+                            'title' => 'Urutan',
+                        ),
                     ),
                     'action'    => $action,
                     'head_left'        => array('add' => base_url('/admin/refProduk/add'))
@@ -119,12 +123,14 @@ class RefProduk extends BaseController
 
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')->set_form_action(base_url(('admin/refProduk/form/' . $id)))
-            ->add('ref_produk_label', 'Nama Pedagang', 'text', true, ($data) ? $data['ref_produk_label'] : '', 'style="width:100%;"');
+            ->add('ref_produk_label', 'Nama Pedagang', 'text', true, ($data) ? $data['ref_produk_label'] : '', 'style="width:100%;"')
+            ->add('ref_produk_urutan', 'Urutan', 'number', true, ($data) ? $data['ref_produk_urutan'] : '', 'style="width:100%;"');
 
         if ($form->formVerified()) {
             if ($id != null) {
                 $data_update = array(
                     'ref_produk_label'    => $this->request->getPost('ref_produk_label'),
+                    'ref_produk_urutan'    => $this->request->getPost('ref_produk_urutan'),
                 );
                 $this->db->table('ref_produk')->where('ref_produk_id', $id)->update($data_update);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');
@@ -132,6 +138,7 @@ class RefProduk extends BaseController
             } else {
                 $data_insert = array(
                     'ref_produk_label'    => $this->request->getPost('ref_produk_label'),
+                    'ref_produk_urutan'    => $this->request->getPost('ref_produk_urutan'),
                 );
                 $this->db->table('ref_produk')->insert($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Insert Baru');
