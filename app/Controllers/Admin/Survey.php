@@ -93,7 +93,7 @@ class Survey extends BaseController
 
     public function formSurvey($tanggal, $seller_id)
     {
-        $produk_seller = $this->db->query("select ref_produk_var_id, ref_produk_var_label, '( '||ref_produk_satuan_label||' )' as ref_produk_satuan_label from seller_produk left join ref_produk_varian on seller_prod_produk_var_id = ref_produk_var_id left join ref_produk_satuan on ref_produk_satuan_id = ref_produk_varian.ref_produk_var_satuan_id where seller_prod_seller_id=".$seller_id)->getResult('array');
+        $produk_seller = $this->db->query("select ref_produk_var_id, ref_produk_var_label, '( '||ref_produk_satuan_label||' )' as ref_produk_satuan_label from seller_produk left join ref_produk_varian on seller_prod_produk_var_id = ref_produk_var_id left join ref_produk_satuan on ref_produk_satuan_id = ref_produk_varian.ref_produk_var_satuan_id where seller_prod_seller_id=".$seller_id." order by ref_produk_var_urutan asc")->getResult('array');
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
         ->set_form_action(base_url("/admin/survey/formSurvey/".$tanggal."/".$seller_id));
