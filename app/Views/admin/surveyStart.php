@@ -6,7 +6,9 @@
             <div class="card-body">
                 <h3 class="card-title">
                     Survey
+                    <p class="text-right">Tanggal : <?=$tanggal?></p>
                 </h3>
+
                 <?= $form ?>
             </div>
         </div>

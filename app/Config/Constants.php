@@ -65,6 +65,9 @@ defined('DECADE') || define('DECADE', 315360000);
 |       http://tldp.org/LDP/abs/html/exitcodes.html
 |
 */
+$base = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']) : 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']);
+
+defined('BASE') || define('BASE', $base);
 defined('EXIT_SUCCESS')        || define('EXIT_SUCCESS', 0); // no errors
 defined('EXIT_ERROR')          || define('EXIT_ERROR', 1); // generic error
 defined('EXIT_CONFIG')         || define('EXIT_CONFIG', 3); // configuration error
