@@ -40,6 +40,9 @@ class RefSeller extends BaseController
         $action['edit']     = array(
             'link'          => 'admin/refSeller/edit/'
         );
+        $action['delete']    = array(
+            'link'          => 'admin/refSeller/hapus/'
+        );
 
         $grid = new Grid();
         return $grid->set_query($SQL, array(
@@ -146,6 +149,12 @@ class RefSeller extends BaseController
         $data['form']   = $this->form($id);
 
         return view('admin/add', $data);
+    }
+
+    public function hapus($id){
+        // print_r($id);exit();
+        $this->db->table("seller")->where(['seller_id'=>$id])->delete();
+        return redirect()->to(base_url("admin/refSeller"));
     }
 
     public function detail($id)
