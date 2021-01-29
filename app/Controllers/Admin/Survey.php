@@ -10,6 +10,7 @@ class Survey extends BaseController
 {
     public function index()
     {
+        date_default_timezone_set("Asia/Jakarta");
         $tanggal        = ($this->request->getGet('tanggal')=='' ? date("Y-m-d") : $this->request->getGet('tanggal'));
         $data['grid']   = $this->gridSeller($tanggal);
         $data['search'] = $this->searchSeller();
@@ -52,8 +53,18 @@ class Survey extends BaseController
 
     public function gridSeller($tanggal)
     {
-        $SQL = "select '<a href=\"".base_url("admin/survey/start/".$tanggal)."/'||seller_id||'\">'||seller_nama||'</a>' as seller_nama, ref_pasar_label, seller_id as id from seller left join ref_pasar on ref_pasar_id = seller_pasar_id";
-
+        $session = $this->session->get();
+        $where = "";
+        if($session['user']['user_id'] == '6'){
+            $where = "WHERE ref_pasar_id = '3'";
+        }elseif($session['user']['user_id'] == '4'){
+            $where = "WHERE ref_pasar_id = '8'";
+        }elseif($session['user']['user_id'] == '5'){
+            $where = "WHERE ref_pasar_id = '3'";
+        }
+        /*$SQL = "select '<a href=\"".base_url("admin/survey/start/".$tanggal)."/'||seller_id||'\">'||seller_nama||'</a>' as seller_nama, ref_pasar_label, seller_id as id from seller left join ref_pasar on ref_pasar_id = seller_pasar_id"; */
+        $SQL = "select '<a href=\"".base_url("admin/survey/start/".$tanggal)."/'||seller_id||'\">'||seller_nama||'</a>' as seller_nama, ref_pasar_label, seller_id as id from seller left join ref_pasar on ref_pasar_id = seller_pasar_id ".$where;  
+        
         $grid = new Grid();
         return $grid->set_query($SQL,array(
             array('seller_id', $this->request->getGet('seller'),'=')
@@ -82,6 +93,7 @@ class Survey extends BaseController
         $cek = $this->db->query("select * from survey_header where survey_head_tanggal='".$tanggal."' and survey_head_seller_id=".$seller_id)->getRowArray();
         if(empty($cek)){
             $data['form'] = $this->formSurvey($tanggal, $seller_id);
+            $data['tanggal'] = date('d-m-Y',strtotime($tanggal));
             return view('admin/surveyStart', $data);
         }else{
             if($cek['survey_head_approve_is']=='t'){
@@ -137,6 +149,8 @@ class Survey extends BaseController
     public function edit($head_id)
     {
         $data['form'] = $this->formSurveyEdit($head_id);
+        $d_tanggal = $this->db->query("select * from survey_header where survey_head_id=".$head_id)->getRowArray();
+        $data['tanggal'] = date('d-m-Y',strtotime($d_tanggal['survey_head_tanggal']));
         return view('admin/surveyStart', $data);
     }
 

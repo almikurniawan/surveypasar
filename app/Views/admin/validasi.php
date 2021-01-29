@@ -7,7 +7,10 @@
                 <h3 class="card-title">
                     <?= $title ?>
                 </h3>
+                <?= $search ?>
+                <div class="table-responsive">
                 <?= $grid ?>
+                </div>
             </div>
         </div>
     </div>

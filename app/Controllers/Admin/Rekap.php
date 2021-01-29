@@ -27,25 +27,34 @@ class Rekap extends BaseController
         if($pasar_id!=''){
             $where = " and seller.seller_pasar_id = ".$pasar_id;
             $pasar_url      = "/".$pasar_id;
+            $select_pasar = "(select ref_pasar_label from ref_pasar where ref_pasar_id = ".$pasar_id.") as pasar";
         }else{
             $where          = "";
             $pasar_url      = "/0";
+            $select_pasar = "'Semua Pasar' as pasar";
         }
+
         $SQL    = "SELECT
                         ref_produk_label||' - '||ref_produk_var_label as nama_bahan,
 	                    ref_produk_label,
                         ref_produk_var_id as id,
-                        coalesce((select AVG(survey_det_harga) from survey_detail left join seller on seller_id = survey_det_seller_id where survey_det_produk_var_id = ref_produk_var_id and survey_det_tanggal = '".$new_tanggal."' ".$where."),0) as avg
+                        coalesce((select AVG(survey_det_harga) from survey_detail left join seller on seller_id = survey_det_seller_id where survey_det_produk_var_id = ref_produk_var_id and survey_det_tanggal = '".$new_tanggal."' ".$where."),0) as avg,
+                        ".$select_pasar."
                     FROM
                         ref_produk_varian
                         left join ref_produk on ref_produk_id = ref_produk_var_produk_id";
         $grid   = new Grid();
-        return $grid->set_query($SQL)
+        
+            return $grid->set_query($SQL)
             ->set_sort(array('ref_produk_label','asc'))
             ->configure(
                 array(
                     'datasouce_url' => base_url("admin/rekap/gridRekap?datasource&" . get_query_string()),
                     'grid_columns'  => array(
+                        array(
+                            'field' => 'pasar',
+                            'title' => 'NAMA PASAR'
+                        ),
                         array(
                             'field' => 'nama_bahan',
                             'title' => 'NAMA BAHAN POKOK'
@@ -70,6 +79,7 @@ class Rekap extends BaseController
             ->set_row_start(3)
             ->set_header(array('A1'=> 'Rekap'))
             ->output();
+            
     }
 
     public function search()

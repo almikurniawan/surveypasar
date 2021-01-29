@@ -1,0 +1,1007 @@
+CRITICAL - 2020-12-29 01:56:06 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(248): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 01:56:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 01:56:11 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(248): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 01:56:11 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 01:56:32 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(248): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 01:56:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:13:34 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(101): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_detail('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:13:34 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:17:49 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:17:49 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:18:12 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:18:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:18:21 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:18:21 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:18:28 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:18:28 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:19:07 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:19:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:19:12 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:19:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:20:12 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:20:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:20:21 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:20:21 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:20:25 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:20:25 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:20:28 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:20:28 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:20:32 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:20:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:20:36 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:20:36 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:20:39 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:20:39 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:20:56 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:20:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:20:59 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:20:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:21:44 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:21:44 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:21:49 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:21:49 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:21:59 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:21:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:22:11 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:22:11 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:22:27 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:22:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:22:41 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:22:41 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:22:45 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:22:45 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:28 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:28 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:29 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:29 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:30 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:30 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:30 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:30 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:31 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:31 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:31 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:31 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:32 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:35 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:35 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:24:36 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:24:36 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:25:06 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:25:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:26:47 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:26:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:26:51 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('10')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:26:51 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 20:45:29 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(101): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_detail('11')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 20:45:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 21:27:12 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('2')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 21:27:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 21:27:17 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('2')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 21:27:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 21:27:33 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('2')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 21:27:33 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 21:27:47 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('2')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 21:29:48 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('2')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 21:29:48 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 21:29:56 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('2')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 21:29:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 21:30:10 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/RefSeller.php(254): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\RefSeller->grid_pilih_produk('2')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefSeller))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 22:39:01 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(76): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->gridSeller('2020-12-29')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 22:39:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-29 22:39:06 --> Undefined index: pageSize
+#0 /var/www/html/surveypasar/app/Libraries/SmartComponent/Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/var/www/html/s...', 55, Array)
+#1 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#2 /var/www/html/surveypasar/app/Libraries/SmartComponent/Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(76): App\Libraries\SmartComponent\Grid->output()
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->gridSeller('2020-12-29')
+#5 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-29 22:39:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/Exceptions/FormatException.php:9
+Stack trace:
+#0 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/API/ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/Debug/Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

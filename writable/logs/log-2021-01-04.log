@@ -1,0 +1,96 @@
+CRITICAL - 2021-01-04 01:52:59 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 01:54:34 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 02:03:51 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 02:03:58 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 02:04:06 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 02:04:18 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 02:04:44 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 02:05:28 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 02:06:09 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 02:20:53 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 03:17:46 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-01-04 03:21:52 --> Array to string conversion
+#0 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/var/www/html/s...', 148, Array)
+#1 /var/www/html/surveypasar/app/Controllers/Admin/Survey.php(139): App\Controllers\Admin\Survey->formSurveyEdit('29')
+#2 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('29')
+#3 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 /var/www/html/surveypasar/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/surveypasar/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

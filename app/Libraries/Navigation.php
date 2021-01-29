@@ -79,11 +79,11 @@ class Navigation
                 'controller'    => 'admin/survey',
                 'icon'          => 'fa-home'
             ),
-            array(
+            /*array(
                 'label'         => 'Notifikasi',
                 'controller'    => 'admin/notifikasi',
                 'icon'          => 'fa-home'
-            ),
+            ),*/
             array(
                 'label'         => 'Validasi',
                 'controller'    => 'admin/validasi',

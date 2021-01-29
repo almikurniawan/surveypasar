@@ -21,8 +21,9 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/apps/surveypasar/public/';
 
+	// public $baseURL = 'http://localhost/surveypasar/public/';
+	public $baseURL = BASE;
 	/*
 	|--------------------------------------------------------------------------
 	| Index File
