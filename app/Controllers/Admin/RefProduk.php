@@ -113,17 +113,14 @@ class RefProduk extends BaseController
     public function form($id = null)
     {
 
+        $data = false;
         if ($id != null) {
             $data = $this->db->table('ref_produk')->getWhere(['ref_produk_id' => $id])->getRowArray();
-        } else {
-            $data = array(
-                'ref_produk_label' => '',
-            );
         }
 
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')->set_form_action(base_url(('admin/refProduk/form/' . $id)))
-            ->add('ref_produk_label', 'Nama Pedagang', 'text', true, ($data) ? $data['ref_produk_label'] : '', 'style="width:100%;"')
+            ->add('ref_produk_label', 'Nama Produk', 'text', true, ($data) ? $data['ref_produk_label'] : '', 'style="width:100%;"')
             ->add('ref_produk_urutan', 'Urutan', 'number', true, ($data) ? $data['ref_produk_urutan'] : '', 'style="width:100%;"');
 
         if ($form->formVerified()) {

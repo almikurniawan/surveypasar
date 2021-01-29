@@ -122,14 +122,9 @@ class RefProdukVarian extends BaseController
     public function form($id = null)
     {
 
+        $data = false;
         if ($id != null) {
             $data = $this->db->table('ref_produk_varian')->getWhere(['ref_produk_var_id' => $id])->getRowArray();
-        } else {
-            $data = array(
-                'ref_produk_var_label' => '',
-                'ref_produk_var_produk_id' => '',
-                'ref_produk_var_satuan_id' => ''
-            );
         }
 
         $form = new Form();
