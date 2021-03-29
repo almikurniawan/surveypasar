@@ -92,7 +92,7 @@ class Komoditas extends BaseController
             rps.ref_produk_satuan_label  AS satuan_barang,
             ( SELECT avg( survey_detail.survey_det_harga ) FROM survey_detail left join seller on seller_id=survey_det_seller_id
             WHERE to_char ( survey_det_tanggal, 'YYYY-MM-DD' ) = '".$tanggal."' 
-                AND survey_det_produk_var_id = ref_produk_var_id ) AS harga_sekarang,
+                AND survey_det_produk_var_id = ref_produk_var_id ".$wherePasar.") AS harga_sekarang,
                 2 AS urutan
         FROM
             ref_produk_varian as rpv
