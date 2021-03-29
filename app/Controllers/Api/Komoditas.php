@@ -42,7 +42,8 @@ class Komoditas extends BaseController
         $req_tanggal    = $thn."-".$bln."-".$tg;
         // $tanggal    = ($this->request->getGet('tanggal')!='' ? $this->request->getGet('tanggal') : date("Y-m-d"));
         $tanggal        = ($req_tanggal!='') ? $req_tanggal : date("Y-m-d");
-        $data           = $this->db->query($this->query_bapoting($tanggal))->getResult('array');
+        $pasar_id        = ($this->request->getGet('tanggal')!='') ? $this->request->getGet('tanggal') : 0;
+        $data           = $this->db->query($this->query_bapoting($tanggal, $pasar_id))->getResult('array');
         if(!empty($data)){
             $response = array(
                 'status'=> true,
@@ -61,7 +62,13 @@ class Komoditas extends BaseController
         return $this->response->setJSON($response);
     }
 
-    function query_bapoting($tanggal){
+    function query_bapoting($tanggal, $pasar_id){
+
+        $wherePasar = "";
+        if($pasar_id>0){
+            $wherePasar = " and seller_pasar_id = ".$pasar_id;
+        }
+
         $sql = "SELECT q.nomor, q.nama_barang, 
         CASE WHEN q.satuan_barang IS NULL THEN '' ELSE q.satuan_barang END AS satuan_barang,
         CASE WHEN q.harga_sekarang IS NULL THEN 0 ELSE q.harga_sekarang END AS harga_sekarang,
@@ -83,7 +90,7 @@ class Komoditas extends BaseController
             rpv.ref_produk_var_id AS id_barang,
             rpv.ref_produk_var_label AS nama_barang,    
             rps.ref_produk_satuan_label  AS satuan_barang,
-            ( SELECT avg( survey_detail.survey_det_harga ) FROM survey_detail 
+            ( SELECT avg( survey_detail.survey_det_harga ) FROM survey_detail left join seller on seller_id=survey_det_seller_id
             WHERE to_char ( survey_det_tanggal, 'YYYY-MM-DD' ) = '".$tanggal."' 
                 AND survey_det_produk_var_id = ref_produk_var_id ) AS harga_sekarang,
                 2 AS urutan
