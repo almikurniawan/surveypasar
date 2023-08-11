@@ -4,9 +4,9 @@
     <div class="col-sm-12">
         <div class="card card-primary">
             <div class="card-body">
-                <h1 class="card-title">
+                <h3 class="card-title">
                     <?= $title ?>
-                </h1>
+                </h3>
 
                 <?= $search . $grid ?>
             </div>
@@ -14,9 +14,9 @@
     </div>
 </div>
 <script>
-    function deleteProduk(id) {
+    function deletePasar(id) {
         kendo.confirm("Yakin ingin delete data ini?").then(function() {
-            $.post("<?= base_url('admin/refProdukVarian/delete') ?>", {
+            $.post("<?= base_url('admin/refPasar/delete') ?>", {
                 id: id
             }, function(result) {
                 if (result.status) {

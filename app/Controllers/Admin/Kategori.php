@@ -19,23 +19,23 @@ use App\Controllers\BaseController;
 use App\Libraries\SmartComponent\Grid;
 use App\Libraries\SmartComponent\Form;
 
-class RefProduk extends BaseController
+class Kategori extends BaseController
 {
     public function index()
     {
         $data['grid']   = $this->grid();
         $data['search'] = $this->search();
-        $data['title']  = 'Produk';
+        $data['title']  = 'Kategori';
 
-        return view('admin/refProduk', $data);
+        return view('admin/kategori', $data);
     }
 
     public function grid()
     {
-        $SQL = "select ref_produk_id as id,* from ref_produk";
+        $SQL = "select *, idkategori as id from kategori";
 
         $action['edit']     = array(
-            'link'          => 'admin/refProduk/edit/'
+            'link'          => 'admin/kategori/edit/'
         );
         $action['delete']     = array(
             'jsf'          => 'deleteProduk'
@@ -43,24 +43,20 @@ class RefProduk extends BaseController
 
         $grid = new Grid();
         return $grid->set_query($SQL, array(
-            array('ref_produk_label', $this->request->getGet('produk'))
+            array('kategorinama', $this->request->getGet('kategorinama'))
         ))
             ->set_sort(array('id', 'desc'))
             ->configure(
                 array(
-                    'datasouce_url' => base_url("admin/refProduk/grid?datasource&" . get_query_string()),
+                    'datasouce_url' => base_url("admin/kategori/grid?datasource&" . get_query_string()),
                     'grid_columns'  => array(
                         array(
-                            'field' => 'ref_produk_label',
+                            'field' => 'kategorinama',
                             'title' => 'Nama produk',
-                        ),
-                        array(
-                            'field' => 'ref_produk_urutan',
-                            'title' => 'Urutan',
-                        ),
+                        )
                     ),
                     'action'    => $action,
-                    'head_left'        => array('add' => base_url('/admin/refProduk/add'))
+                    'head_left'        => array('add' => base_url('/admin/kategori/add'))
                 )
             )->output();
     }
@@ -70,13 +66,13 @@ class RefProduk extends BaseController
         return $form->set_form_type('search')
             ->set_form_method('GET')
             ->set_submit_label('Cari')
-            ->add('produk', 'produk', 'text', false, $this->request->getGet('produk'), 'style="width:100%;" ')
+            ->add('kategorinama', 'Kategori', 'text', false, $this->request->getGet('kategorinama'), 'style="width:100%;" ')
             ->output();
     }
 
     public function add()
     {
-        $data['title']  = 'Tambah produk';
+        $data['title']  = 'Tambah Kategori';
         $data['form']   = $this->form();
 
         return view('admin/add', $data);
@@ -84,7 +80,7 @@ class RefProduk extends BaseController
 
     public function edit($id)
     {
-        $data['title']  = 'Edit produk';
+        $data['title']  = 'Edit Kategori';
         $data['form']   = $this->form($id);
 
         return view('admin/add', $data);

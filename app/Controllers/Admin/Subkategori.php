@@ -19,25 +19,25 @@ use App\Controllers\BaseController;
 use App\Libraries\SmartComponent\Grid;
 use App\Libraries\SmartComponent\Form;
 
-class RefProdukVarian extends BaseController
+class Subkategori extends BaseController
 {
     public function index()
     {
         $data['grid']   = $this->grid();
         $data['search'] = $this->search();
-        $data['title']  = 'Produk Varian';
+        $data['title']  = 'Sub Kategori';
 
-        return view('admin/refProdukVarian', $data);
+        return view('admin/subkategori', $data);
     }
 
     public function grid()
     {
-        $SQL = "select ref_produk_var_id as id,* from ref_produk_varian
-        left join ref_produk on ref_produk_id = ref_produk_var_produk_id
-        left join ref_produk_satuan on ref_produk_satuan_id = ref_produk_var_satuan_id";
+        $SQL = "select *, idsub_kategori as id 
+        from sub_kategori
+        left join kategori on kategori.idkategori = sub_kategori.sub_kategori_idkategori";
 
         $action['edit']     = array(
-            'link'          => 'admin/RefProdukVarian/edit/'
+            'link'          => 'admin/subkategori/edit/'
         );
         $action['delete']     = array(
             'jsf'          => 'deleteProduk'
@@ -45,33 +45,25 @@ class RefProdukVarian extends BaseController
 
         $grid = new Grid();
         return $grid->set_query($SQL, array(
-            array('ref_produk_var_produk_id', $this->request->getGet('kategori'), '='),
-            array('ref_produk_var_label', $this->request->getGet('varian'))
+            array('sub_kategori_idkategori', $this->request->getGet('sub_kategori_idkategori'), '='),
+            array('sub_kategorinama', $this->request->getGet('sub_kategorinama'))
         ))
             ->set_sort(array('id', 'desc'))
             ->configure(
                 array(
-                    'datasouce_url' => base_url("admin/RefProdukVarian/grid?datasource&" . get_query_string()),
+                    'datasouce_url' => base_url("admin/subkategori/grid?datasource&" . get_query_string()),
                     'grid_columns'  => array(
                         array(
-                            'field' => 'ref_produk_var_urutan',
-                            'title' => 'Urutan',
+                            'field' => 'kategorinama',
+                            'title' => 'Kategori',
                         ),
                         array(
-                            'field' => 'ref_produk_var_label',
-                            'title' => 'Nama Varian',
-                        ),
-                        array(
-                            'field' => 'ref_produk_satuan_label',
-                            'title' => 'Satuan',
-                        ),
-                        array(
-                            'field' => 'ref_produk_label',
-                            'title' => 'Nama Produk',
-                        ),
+                            'field' => 'sub_kategorinama',
+                            'title' => 'Sub Kategori',
+                        )
                     ),
                     'action'    => $action,
-                    'head_left' => array('add' => base_url('/admin/RefProdukVarian/add')),
+                    'head_left' => array('add' => base_url('/admin/subkategori/add')),
                     'toolbar'   => array('download')
                 )
             )->output();
@@ -82,20 +74,20 @@ class RefProdukVarian extends BaseController
         return $form->set_form_type('search')
             ->set_form_method('GET')
             ->set_submit_label('Cari')
-            ->add('kategori', 'Produk', 'select', false, $this->request->getGet('kategori'), 'style="width:100%;" ',
+            ->add('sub_kategori_idkategori', 'Kategori', 'select', false, $this->request->getGet('sub_kategori_idkategori'), 'style="width:100%;" ',
                 array(
-                    'table' => 'ref_produk',
-                    'id' => 'ref_produk_id',
-                    'label' => 'ref_produk_label'
+                    'table' => 'kategori',
+                    'id' => 'idkategori',
+                    'label' => 'kategorinama'
                 )
             )
-            ->add('varian', 'Varian', 'text', false, $this->request->getGet('varian'), 'style="width:100%;" ')
+            ->add('sub_kategorinama', 'Sub Kategori', 'text', false, $this->request->getGet('sub_kategorinama'), 'style="width:100%;" ')
             ->output();
     }
 
     public function add()
     {
-        $data['title']  = 'Tambah produk varian';
+        $data['title']  = 'Tambah Sub Kategori';
         $data['form']   = $this->form();
 
         return view('admin/add', $data);

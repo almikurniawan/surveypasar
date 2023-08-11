@@ -4,9 +4,9 @@
     <div class="col-sm-12">
         <div class="card card-primary">
             <div class="card-body">
-                <h1 class="card-title">
+                <h3 class="card-title">
                     <?= $title ?>
-                </h1>
+                </h3>
 
                 <?= $search . $grid ?>
             </div>

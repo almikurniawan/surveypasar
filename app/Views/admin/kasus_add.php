@@ -80,7 +80,17 @@
         text-align: right;
         margin-right: 30px;
     }
+    .marker {
+        background-image: url('https://icons.iconarchive.com/icons/icons-land/vista-map-markers/64/Map-Marker-Push-Pin-1-Pink-icon.png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
 </style>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
 
 <div class="row">
     <div class="col">
@@ -90,7 +100,7 @@
                     <?= $title ?>
                 </h3>                
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <?php
                         if (session()->getFlashdata('success')) {
                             echo '<div class="alert alert-success" role="alert">

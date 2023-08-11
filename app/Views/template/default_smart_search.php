@@ -9,7 +9,7 @@
                 <?= $value['field']?>
             </div>
     <?php }}?>
-    <div class="form-group col-sm-3 pt-4">
+    <div class="form-group col-sm-3 pt-4" style="margin-top:9px;">
         <?= $submit_btn . $cancel_btn?>
     </div>
 </div>

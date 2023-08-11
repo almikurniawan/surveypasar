@@ -7,6 +7,20 @@
                 <h3 class="card-title">
                     <?= $title ?>
                 </h3>
+                <?php
+                if (session()->getFlashdata('success')) {
+                    echo '<div class="alert alert-success" role="alert">
+									' . session()->getFlashdata('success') . '
+						  		</div>';
+                }
+                ?>
+                <?php
+                if (session()->getFlashdata('danger')) {
+                    echo '<div class="alert alert-danger" role="alert">
+									' . session()->getFlashdata('danger') . '
+						  		</div>';
+                }
+                ?>
                 <?= $form ?>
             </div>
         </div>

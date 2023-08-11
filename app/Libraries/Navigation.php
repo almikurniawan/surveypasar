@@ -72,26 +72,20 @@ class Navigation
 
     private function list_menu()
     {
-
         $list_menu = array(
             array(
-                'label'         => 'Survey',
-                'controller'    => 'admin/survey',
-                'icon'          => 'fa-home'
-            ),
-            /*array(
-                'label'         => 'Notifikasi',
-                'controller'    => 'admin/notifikasi',
-                'icon'          => 'fa-home'
-            ),*/
-            array(
-                'label'         => 'Validasi',
-                'controller'    => 'admin/validasi',
+                'label'         => 'Kegiatan',
+                'controller'    => 'admin/Kegiatan',
                 'icon'          => 'fa-home'
             ),
             array(
-                'label'         => 'Rekap',
-                'controller'    => 'admin/rekap',
+                'label'         => 'Kasus',
+                'controller'    => 'admin/kasus',
+                'icon'          => 'fa-home'
+            ),
+            array(
+                'label'         => 'Peta Kasus',
+                'controller'    => 'admin/Petakasus',
                 'icon'          => 'fa-home'
             ),
             array(
@@ -100,25 +94,13 @@ class Navigation
                 'icon'          => 'fa-home',
                 'child'         => array(
                     array(
-                        'label'     => 'Pasar',
-                        'controller' => 'admin/refPasar',
-                    ),
-                    array(
-                        'label'     => 'Satuan',
-                        'controller' => 'admin/refProdukSatuan',
-                    ),
-                    array(
                         'label'     => 'Kategori',
-                        'controller' => 'admin/refProduk',
+                        'controller' => 'admin/kategori',
                     ),
                     array(
                         'label'     => 'Sub Kategori',
-                        'controller' => 'admin/refProdukVarian',
-                    ),
-                    array(
-                        'label'     => 'Pedagang',
-                        'controller' => 'admin/refSeller',
-                    ),
+                        'controller' => 'admin/subkategori',
+                    )
                 )
             ),
             array(

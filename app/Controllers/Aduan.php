@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Admin;
+namespace App\Controllers;
 
 /**
  * Class BaseController
@@ -19,7 +19,7 @@ use App\Controllers\BaseController;
 use App\Libraries\SmartComponent\Grid;
 use App\Libraries\SmartComponent\Form;
 
-class Home extends BaseController
+class Aduan extends BaseController
 {
     public function index($bulan = null, $tahun = null)
     {

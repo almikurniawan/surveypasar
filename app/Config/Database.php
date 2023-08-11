@@ -33,10 +33,10 @@ class Database extends \CodeIgniter\Database\Config
 		// 'DSN'      => 'pgsql:host=localhost;port=5432;dbname=disperindag',
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => 'postgres',
-		'password' => 'root',
-		'database' => 'survey1',
-		'DBDriver' => 'Postgre',
+		'username' => 'root',
+		'password' => 'almi1711',
+		'database' => 'aduan',
+		'DBDriver' => 'MySqli',
 		'DBPrefix' => '',
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'development'),
@@ -49,7 +49,7 @@ class Database extends \CodeIgniter\Database\Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 5432,
+		'port'     => 3306,
 	];
 
 	/**

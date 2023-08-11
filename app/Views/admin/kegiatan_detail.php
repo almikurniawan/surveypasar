@@ -90,21 +90,7 @@
                     <?= $title ?>
                 </h3>                
                 <div class="row">
-                    <div class="col-md-6">
-                        <?php
-                        if (session()->getFlashdata('success')) {
-                            echo '<div class="alert alert-success" role="alert">
-                                            ' . session()->getFlashdata('success') . '
-                                        </div>';
-                        }
-                        ?>
-                        <?php
-                        if (session()->getFlashdata('danger')) {
-                            echo '<div class="alert alert-danger" role="alert">
-                                            ' . session()->getFlashdata('danger') . '
-                                        </div>';
-                        }
-                        ?>
+                    <div class="col-md-12">
                         <?= $form?>
                     </div>
                 </div>

@@ -80,7 +80,7 @@ class RefPasar extends BaseController
 
     public function edit($id)
     {
-        $data['title']  = 'Edit Pasar';
+        ,$data['title']  = 'Edit Pasar';
         $data['form']   = $this->form($id);
 
         return view('admin/add', $data);

@@ -4,7 +4,7 @@ foreach ($field as $key => $value) {
         echo $value['field'];
     }else{?>
         <div class="form-group">
-            <label class="<?= $value['class']?>"><?= $value['title']?></label>
+            <label class="<?= $value['class']?> tb-livepreview-subheader"><?= $value['title']?></label>
             <?= $value['field']?>
         </div>
 <?php }}?>
