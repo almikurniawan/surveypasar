@@ -21,6 +21,7 @@
                 <h3 class="card-title">
                     <?= $title?>
                 </h3>
+                <?= $search?>
                 <div id='map' style='width: 100%; height: 500px;'></div>
             </div>
         </div>

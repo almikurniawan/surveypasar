@@ -125,8 +125,9 @@ class Kasus extends BaseController
     public function detail($id){
         $data['title']  = 'Detail Kasus';
         $data['form']   = $this->resume($id);
+        $data['verifikasi'] = $this->verifikasi($id);
 
-        return view('admin/kasus_add', $data);
+        return view('admin/kasus_detail', $data);
     }
 
     public function add(){
@@ -301,6 +302,36 @@ class Kasus extends BaseController
             }
     }
 
+    function verifikasi($id){
+        $data_kasus = $this->db->table("kasus")->getWhere(["kasusid"=>$id])->getRowArray();
+
+        $form = new Form();
+        $form->add('kasusstatus', 'Status', 'select', true, $data_kasus['kasusstatus'], 'style="width:100%;" ',
+                array(
+                    'table' => 'status',
+                    'id' => 'statusid',
+                    'label' => 'statusname'
+                )
+            )
+            ->add('kasuscatatanpetugas', 'Catatan Verifikasi', 'textArea', true, $data_kasus['kasuscatatanpetugas'], 'style="width:100%;" ');
+
+        if ($form->formVerified()) {
+            try {
+                $data = $form->get_data();
+
+                $this->db->table("kasus")->where("kasusid",$id)->update($data);
+                $this->session->setFlashdata('success', "Sukses Verifikasi Kasus ".$data_kasus['kasusjudul']);
+                die(forceRedirect(base_url("admin/kasus")));
+            } catch (\mysqli_sql_exception $th) {
+                //throw $th;
+                dd($th);
+            }
+            
+        } else {
+            return $form->output();
+        }
+    }
+
     public function resume($id){
         $data_kasus = $this->db->table("kasus")->getWhere(["kasusid"=>$id])->getRowArray();
 
@@ -308,6 +339,7 @@ class Kasus extends BaseController
         $form->set_resume(true)
             ->set_template('admin/sf_kasus_resume',$data_kasus)
             ->add('kasusjudul', 'Judul Kasus', 'text', true, $data_kasus['kasusjudul'], 'style="width:100%;" ')
+            ->add('kasuscatatanpetugas', 'Catatan Petugas', 'text', true, $data_kasus['kasuscatatanpetugas'], 'style="width:100%;" ')
             ->add('kasusdeskripsi', 'Deskripsi', 'textEditor', true, $data_kasus['kasusdeskripsi'], 'style="width:100%;" ')
             ->add('kasuslatitude', 'Latitude', 'text', false, $data_kasus['kasuslatitude'], 'style="width:100%;" readonly')
             ->add('kasuslongitude', 'Longitude', 'text', false, $data_kasus['kasuslongitude'], 'style="width:100%;" readonly')

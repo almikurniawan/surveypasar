@@ -24,14 +24,25 @@ class PetaKasus extends BaseController
     public function index($bulan = null, $tahun = null)
     {
         $data['title']  = 'Peta Kasus';
-        $data['kasus'] = $this->db->query("select *, kasusid as id, concat(kategori.kategorinama,' - ',sub_kategori.sub_kategorinama) as tantrib from kasus
+        $SQL = "select *, kasusid as id, concat(kategori.kategorinama,' - ',sub_kategori.sub_kategorinama) as tantrib from kasus
         left join kategori on kasus.kasuskategori = kategori.idkategori
         left join sub_kategori on sub_kategori.idsub_kategori = kasus.kasussubkategori
         left join user on user_id = kasus.kasuscreatedby
         left join urusan on urusanid = kasusurusan
-        left join status on statusid = kasus.kasusstatus")->getResultArray();
+        left join status on statusid = kasus.kasusstatus
+        where true";
 
-        // dd($data['kasus']);
+        if($this->request->getGet("kasusstatus")){
+            $SQL .= " and kasusstatus=".$this->request->getGet("kasusstatus");
+        }
+        if($this->request->getGet("kasuskategori")){
+            $SQL .= " and kasuskategori=".$this->request->getGet("kasuskategori");
+        }
+        if($this->request->getGet("kasussubkategori")){
+            $SQL .= " and kasussubkategori=".$this->request->getGet("kasussubkategori");
+        }
+        $data['kasus'] = $this->db->query($SQL)->getResultArray();
+        $data['search'] = $this->search();
         return view('admin/peta_kasus', $data);
     }
 
@@ -40,7 +51,6 @@ class PetaKasus extends BaseController
         return $form->set_form_type('search')
             ->set_form_method('GET')
             ->set_submit_label('Cari')
-            ->add('kasusjudul', 'Kasus', 'text', false, $this->request->getGet('kasusjudul'), 'style="width:100%;" ')
             ->add('kasuskategori', 'Kategori', 'select', false, $this->request->getGet('kasuskategori'), 'style="width:100%;" ',
                 array(
                     'table' => 'kategori',
