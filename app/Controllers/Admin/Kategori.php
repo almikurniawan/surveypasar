@@ -55,8 +55,8 @@ class Kategori extends BaseController
                             'title' => 'Nama produk',
                         )
                     ),
-                    'action'    => $action,
-                    'head_left'        => array('add' => base_url('/admin/kategori/add'))
+                    // 'action'    => $action,
+                    // 'head_left'        => array('add' => base_url('/admin/kategori/add'))
                 )
             )->output();
     }

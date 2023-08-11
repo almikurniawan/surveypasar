@@ -100,28 +100,32 @@ class Navigation
                     array(
                         'label'     => 'Sub Kategori',
                         'controller' => 'admin/subkategori',
+                    ),
+                    array(
+                        'label'     => 'Pegawai',
+                        'controller' => 'admin/pegawai',
                     )
                 )
             ),
-            array(
-                'label'         => 'Hak Akses',
-                'controller'    => '#akses',
-                'icon'          => 'fa-home',
-                'child'         => array(
-                    array(
-                        'label'     => 'Group Akses',
-                        'controller' => 'admin/aksesGroup',
-                    ),
-                    array(
-                        'label'     => 'Modul Akses',
-                        'controller' => 'admin/aksesModul',
-                    ),
-                    array(
-                        'label'     => 'User Akses',
-                        'controller' => 'admin/aksesUser',
-                    ),
-                )
-            ),
+            // array(
+            //     'label'         => 'Hak Akses',
+            //     'controller'    => '#akses',
+            //     'icon'          => 'fa-home',
+            //     'child'         => array(
+            //         array(
+            //             'label'     => 'Group Akses',
+            //             'controller' => 'admin/aksesGroup',
+            //         ),
+            //         array(
+            //             'label'     => 'Modul Akses',
+            //             'controller' => 'admin/aksesModul',
+            //         ),
+            //         array(
+            //             'label'     => 'User Akses',
+            //             'controller' => 'admin/aksesUser',
+            //         ),
+            //     )
+            // ),
         );
 
         return $list_menu;

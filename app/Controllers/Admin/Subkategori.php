@@ -62,9 +62,9 @@ class Subkategori extends BaseController
                             'title' => 'Sub Kategori',
                         )
                     ),
-                    'action'    => $action,
-                    'head_left' => array('add' => base_url('/admin/subkategori/add')),
-                    'toolbar'   => array('download')
+                    // 'action'    => $action,
+                    // 'head_left' => array('add' => base_url('/admin/subkategori/add')),
+                    // 'toolbar'   => array('download')
                 )
             )->output();
     }
