@@ -126,7 +126,16 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
+
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<!-- <li class="nav-item"><a class="nav-link pl-0" href="<?= base_url("Aduan/Search")?>"><i class="fa-home"></i> Cari Kasus Saya</a></li> -->
+			</ul>
+			
+			<form class="form-inline my-2 my-lg-0" method="get" action="<?= base_url("Aduan/Search")?>">
+				<input class="form-control mr-sm-2" type="search" name="nohp" placeholder="Masukan Nomor HP" aria-label="Search">
+				<button class="btn btn-warning my-2 my-sm-0" type="submit">Lihat Kasus Saya</button>
+			</form>
 			</div>
 		</nav>
 		<nav id="breadcrumb"></nav>
