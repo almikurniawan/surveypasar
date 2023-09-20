@@ -182,6 +182,19 @@ class Kasus extends BaseController
                     'id' => "concat(idsub_kategori,'::',sub_kategori_idkategori)",
                     'label' => "concat(kategori.kategorinama,' - ',sub_kategori.sub_kategorinama)"
                 )
+            )
+            ->add(
+                'kasusdesaid',
+                'Desa',
+                'select',
+                false,
+                '',
+                'style="width:100%;" ',
+                array(
+                    'table' => 'master_desa',
+                    'id' => "idmaster_desa",
+                    'label' => "concat(nama_desa,' - ',nama_kec)"
+                )
             );
 
             if ($form->formVerified()) {
@@ -265,6 +278,19 @@ class Kasus extends BaseController
                     'table' => 'kategori left join sub_kategori on kategori.idkategori = sub_kategori.sub_kategori_idkategori',
                     'id' => "concat(idsub_kategori,'::',sub_kategori_idkategori)",
                     'label' => "concat(kategori.kategorinama,' - ',sub_kategori.sub_kategorinama)"
+                )
+            )
+            ->add(
+                'kasusdesaid',
+                'Desa',
+                'select',
+                false,
+                $data_kasus['kasusdesaid'],
+                'style="width:100%;" ',
+                array(
+                    'table' => 'master_desa',
+                    'id' => "idmaster_desa",
+                    'label' => "concat(nama_desa,' - ',nama_kec)"
                 )
             );
 
@@ -365,6 +391,19 @@ class Kasus extends BaseController
                     'table' => 'urusan',
                     'id' => "urusanid",
                     'label' => "urusannama"
+                )
+            )
+            ->add(
+                'kasusdesaid',
+                'Desa',
+                'select',
+                false,
+                $data_kasus['kasusdesaid'],
+                'style="width:100%;" ',
+                array(
+                    'table' => 'master_desa',
+                    'id' => "idmaster_desa",
+                    'label' => "concat(nama_desa,' - ',nama_kec)"
                 )
             )
             ->add(

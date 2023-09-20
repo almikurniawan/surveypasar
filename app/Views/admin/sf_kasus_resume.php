@@ -41,8 +41,8 @@
 
 <div class="form-row">
     <div class="form-group col-6">
-        <label class="<?= $field['kasusfoto']['class'] ?> tb-livepreview-subheader"><?= $field['kasusfoto']['title'] ?></label>
-        <?= $field['kasusfoto']['field'] ?>
+        <label class="<?= $field['kasusdesaid']['class'] ?> tb-livepreview-subheader"><?= $field['kasusdesaid']['title'] ?></label>
+        <?= $field['kasusdesaid']['field'] ?>
     </div>
     <div class="form-group col-6">
         <div id='map' style='width: 100%; height: 300px;'></div>
@@ -89,6 +89,10 @@
     <div class="form-group col-6">
         <label class="<?= $field['kasuscatatanpetugas']['class'] ?> tb-livepreview-subheader"><?= $field['kasuscatatanpetugas']['title'] ?></label>
         <?= $field['kasuscatatanpetugas']['field'] ?>
+    </div>
+    <div class="form-group col-6">
+        <label class="<?= $field['kasusfoto']['class'] ?> tb-livepreview-subheader"><?= $field['kasusfoto']['title'] ?></label>
+        <?= $field['kasusfoto']['field'] ?>
     </div>
 </div>
 <div class="form-row">

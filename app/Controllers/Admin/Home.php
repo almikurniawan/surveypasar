@@ -34,7 +34,7 @@ class Home extends BaseController
         $form
             ->set_form_method('POST')
             ->add('kegiatantanggal', 'Tanggal Kegiatan', 'datetime', true, '', 'style="width:100%;" ')
-            ->add('kegiatanjudul', 'Judul', 'text', true, '', 'style="width:100%;" ')
+            // ->add('kegiatanjudul', 'Judul', 'text', true, '', 'style="width:100%;" ')
             ->add('kegiatanjumlahpersonil', 'Jumlah Personil', 'number', true, '', 'style="width:100%;" ')
             ->add('kegiatanketerangan', 'Keterangan', 'text', false, '', 'style="width:100%;" ')
             ->add('kegiatanijin', 'Ijin', 'text', false, '', 'style="width:100%;" ')

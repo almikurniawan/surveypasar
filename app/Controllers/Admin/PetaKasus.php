@@ -30,6 +30,7 @@ class PetaKasus extends BaseController
         left join user on user_id = kasus.kasuscreatedby
         left join urusan on urusanid = kasusurusan
         left join status on statusid = kasus.kasusstatus
+        left join master_desa on master_desa.idmaster_desa = kasus.kasusdesaid
         where true";
 
         if($this->request->getGet("kasusstatus")){
@@ -40,6 +41,9 @@ class PetaKasus extends BaseController
         }
         if($this->request->getGet("kasussubkategori")){
             $SQL .= " and kasussubkategori=".$this->request->getGet("kasussubkategori");
+        }
+        if($this->request->getGet("kecamatan")){
+            $SQL .= " and master_desa.nama_kec like '%".$this->request->getGet("kecamatan")."%'";
         }
         $data['kasus'] = $this->db->query($SQL)->getResultArray();
         $data['search'] = $this->search();
@@ -72,6 +76,13 @@ class PetaKasus extends BaseController
                     'label' => 'statusname'
                 )
             )
+            ->add('kecamatan', 'Kecamatan', 'select', false, $this->request->getGet('kecamatan'), 'style="width:100%;" ',
+                array(
+                    'table' => 'master_desa',
+                    'id' => 'distinct(nama_kec)',
+                    'label' => 'nama_kec'
+                )
+            )
             ->output();
     }
 
@@ -82,6 +93,7 @@ class PetaKasus extends BaseController
         left join sub_kategori on sub_kategori.idsub_kategori = kasus.kasussubkategori
         left join user on user_id = kasus.kasuscreatedby
         left join status on statusid = kasus.kasusstatus
+        left join master_desa on master_desa.idmaster_desa = kasus.kasusdesaid
         ";
 
         $action['edit']     = array(
@@ -94,6 +106,7 @@ class PetaKasus extends BaseController
         $grid = new Grid();
         return $grid->set_query($SQL, array(
             array('kasusjudul', $this->request->getGet('kasusjudul')),
+            array('master_desa.nama_kec', $this->request->getGet('kecamatan')),
             array('kasuskategori', $this->request->getGet('kasuskategori'),'='),
             array('kasussubkategori', $this->request->getGet('kasussubkategori'),'='),
             array('kasusstatus', $this->request->getGet('kasusstatus'),'=')

@@ -81,10 +81,10 @@ class Kegiatan extends BaseController
                 array(
                     'datasouce_url' => base_url("admin/kegiatan/grid?datasource&" . get_query_string()),
                     'grid_columns'  => array(
-                        array(
-                            'field' => 'kegiatanjudul',
-                            'title' => 'Kegiatan',
-                        ),
+                        // array(
+                        //     'field' => 'kegiatanjudul',
+                        //     'title' => 'Kegiatan',
+                        // ),
                         array(
                             'field' => 'kegiatantanggal',
                             'title' => 'Tanggal',
@@ -112,7 +112,8 @@ class Kegiatan extends BaseController
                         )
                     ),
                     'action'    => $action,
-                    'head_left'        => array('add' => base_url('/admin'))
+                    'head_left' => array('add' => base_url('/admin')),
+                    'toolbar'   => array('download')
                 )
             )->output();
     }
@@ -130,7 +131,7 @@ class Kegiatan extends BaseController
         $form
             ->set_form_method('POST')
             ->add('kegiatantanggal', 'Tanggal Kegiatan', 'datetime', true, $data_edit['kegiatantanggal'], 'style="width:100%;" ')
-            ->add('kegiatanjudul', 'Judul', 'text', true,  $data_edit['kegiatanjudul'], 'style="width:100%;" ')
+            // ->add('kegiatanjudul', 'Judul', 'text', true,  $data_edit['kegiatanjudul'], 'style="width:100%;" ')
             ->add('kegiatanjumlahpersonil', 'Jumlah Personil', 'number', true, $data_edit['kegiatanjumlahpersonil'], 'style="width:100%;" ')
             ->add('kegiatanketerangan', 'Keterangan', 'text', false, $data_edit['kegiatanketerangan'], 'style="width:100%;" ')
             ->add('kegiatanijin', 'Ijin', 'text', false, $data_edit['kegiatanijin'], 'style="width:100%;" ')
@@ -179,7 +180,7 @@ class Kegiatan extends BaseController
             ->set_template_column(2)
             ->set_form_method('POST')
             ->add('kegiatantanggal', 'Tanggal Kegiatan', 'datetime', true, $data_edit['kegiatantanggal'], 'style="width:100%;" ')
-            ->add('kegiatanjudul', 'Judul', 'text', true,  $data_edit['kegiatanjudul'], 'style="width:100%;" ')
+            // ->add('kegiatanjudul', 'Judul', 'text', true,  $data_edit['kegiatanjudul'], 'style="width:100%;" ')
             ->add('kegiatanjumlahpersonil', 'Jumlah Personil', 'number', true, $data_edit['kegiatanjumlahpersonil'], 'style="width:100%;" ')
             ->add('kegiatanketerangan', 'Keterangan', 'text', false, $data_edit['kegiatanketerangan'], 'style="width:100%;" ')
             ->add('kegiatanijin', 'Ijin', 'text', false, $data_edit['kegiatanijin'], 'style="width:100%;" ')

@@ -165,6 +165,19 @@ class Aduan extends BaseController
                     'label' => "concat(kategori.kategorinama,' - ',sub_kategori.sub_kategorinama)"
                 )
             )
+            ->add(
+                'kasusdesaid',
+                'Desa',
+                'select',
+                false,
+                '',
+                'style="width:100%;" ',
+                array(
+                    'table' => 'master_desa',
+                    'id' => "idmaster_desa",
+                    'label' => "concat(nama_desa,' - ',nama_kec)"
+                )
+            )
             ->add('kasuslatitude', 'Latitude', 'text', false, '', 'style="width:100%;" readonly')
             ->add('kasuslongitude', 'Longitude', 'text', false, '', 'style="width:100%;" readonly')
             ->add('kasustanggal', 'Tanggal Kasus', 'datetime', true, '', 'style="width:100%;" ')
