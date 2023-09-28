@@ -79,6 +79,11 @@ class Navigation
                 'icon'          => 'fa-home'
             ),
             array(
+                'label'         => 'Surat Tugas',
+                'controller'    => 'admin/SuratTugas',
+                'icon'          => 'fa-home'
+            ),
+            array(
                 'label'         => 'Kasus',
                 'controller'    => 'admin/kasus',
                 'icon'          => 'fa-home'

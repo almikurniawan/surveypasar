@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>JALINMAS</title>
+	<title>POLPP</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="<?= base_url("/assets/kendo/styles/kendo.blueopal.min.css") ?>" />
     <link rel="stylesheet" href="<?= base_url("/assets/kendo/styles/kendo.blueopal.mobile.min.css") ?>" />
 	
-	<link rel="stylesheet" href="<?= base_url("/assets/testing.css"); ?>" />
+	<!-- <link rel="stylesheet" href="<?= base_url("/assets/testing.css"); ?>" /> -->
     
 	<script src="<?= base_url("/assets/kendo/js/jquery.min.js") ?>"></script>
     <script src="<?= base_url("/assets/kendo/js/kendo.all.min.js") ?>"></script>
@@ -63,7 +63,7 @@
 		}
 
 		.bg-light {
-			background-color: #4baca4 !important;
+			background-color: #7fac65 !important;
 		}
 
 		.navbar-light .navbar-brand,
@@ -80,7 +80,7 @@
 
 		.dropdown-menu {
 			color: white !important;
-			background-color: #4baca4 !important;
+			background-color: #7fac65 !important;
 		}
 
 		.dropdown-item {
@@ -89,7 +89,7 @@
 
 		.dropdown-menu .dropdown-item.active,
 		.dropdown-menu .dropdown-item:active {
-			background-color: #4baca4 !important;
+			background-color: #7fac65 !important;
 		}
 
 		.material-icons {
@@ -121,7 +121,7 @@
 <body>
 	<navigation class="fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand ml-1" href="<?= base_url("admin") ?>"> <img src="https://i.pinimg.com/originals/c4/68/3d/c4683d13550e7919b6b2e95a9e14740c.png" width="30"/> JALINMAS</a>
+			<a class="navbar-brand ml-1" href="<?= base_url("admin") ?>"> <img src="https://i.pinimg.com/originals/c4/68/3d/c4683d13550e7919b6b2e95a9e14740c.png" width="30"/> POLPP</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>

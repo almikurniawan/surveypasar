@@ -63,7 +63,7 @@
 		}
 
 		.bg-light {
-			background-color: #4baca4 !important;
+			background-color: #7fac65 !important;
 		}
 
 		.navbar-light .navbar-brand,
@@ -80,7 +80,7 @@
 
 		.dropdown-menu {
 			color: white !important;
-			background-color: #4baca4 !important;
+			background-color: #7fac65 !important;
 		}
 
 		.dropdown-item {
@@ -89,7 +89,7 @@
 
 		.dropdown-menu .dropdown-item.active,
 		.dropdown-menu .dropdown-item:active {
-			background-color: #4baca4 !important;
+			background-color: #7fac65 !important;
 		}
 
 		.material-icons {
@@ -121,7 +121,7 @@
 <body>
 	<navigation class="fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand ml-1" href="<?= base_url("") ?>"> <img src="https://i.pinimg.com/originals/c4/68/3d/c4683d13550e7919b6b2e95a9e14740c.png" width="30"/> JALINMAS</a>
+			<a class="navbar-brand ml-1" href="<?= base_url("") ?>"> <img src="https://i.pinimg.com/originals/c4/68/3d/c4683d13550e7919b6b2e95a9e14740c.png" width="30"/> POLPP</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>

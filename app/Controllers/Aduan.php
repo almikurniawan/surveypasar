@@ -71,6 +71,19 @@ class Aduan extends BaseController
                 )
             )
             ->add(
+                'kasusdesaid',
+                'Desa',
+                'select',
+                false,
+                $data_kasus['kasusdesaid'],
+                'style="width:100%;" ',
+                array(
+                    'table' => 'master_desa',
+                    'id' => "idmaster_desa",
+                    'label' => "concat(nama_desa,' - ',nama_kec)"
+                )
+            )
+            ->add(
                 'tantrib',
                 'Tantrib',
                 'select',
