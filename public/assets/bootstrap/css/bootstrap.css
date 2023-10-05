@@ -2065,9 +2065,9 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #428e39;
+  border-color: #ffdfa5;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(39, 181, 7, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(253, 225, 67, 0.25);
 }
 
 .form-control::-webkit-input-placeholder {
@@ -2558,8 +2558,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #569233;
-  border-color: #365e20;
+  background-color: #70b945;
+  border-color: #4b9e1e;
 }
 
 .btn-primary:hover {

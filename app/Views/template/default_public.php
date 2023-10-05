@@ -63,13 +63,13 @@
 		}
 
 		.bg-light {
-			background-color: #7fac65 !important;
+			background-color: #eadcc2 !important;
 		}
 
 		.navbar-light .navbar-brand,
 		.navbar-light .navbar-brand:focus,
 		.navbar-light .navbar-brand:hover {
-			color: white !important;
+			color: #47693d !important;
 			font-family: math;
 			font-size: 18;
 		}

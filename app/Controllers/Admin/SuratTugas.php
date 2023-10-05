@@ -195,8 +195,8 @@ class SuratTugas extends BaseController
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
             ->add('surat_tugas_nomor', 'Nomor', 'text', true, ($data) ? $data['surat_tugas_nomor'] : '', 'style="width:100%;"')
-            ->add('surat_tugas_untuk', 'Untuk', 'textEditor', true, ($data) ? $data['surat_tugas_untuk'] : $default_isi, 'style="width:90%;"')
-            ->add('surat_tugas_lampiran', 'Lampiran', 'textEditor', true, ($data) ? $data['surat_tugas_lampiran'] : $default_lampiran, 'style="width:90%;"');
+            ->add('surat_tugas_untuk', 'Untuk', 'textEditor', true, ($data) ? $data['surat_tugas_untuk'] : $default_isi, 'style="width:90%; height:700px;"')
+            ->add('surat_tugas_lampiran', 'Lampiran', 'textEditor', true, ($data) ? $data['surat_tugas_lampiran'] : $default_lampiran, 'style="width:90%; height:700px;"');
 
         if ($form->formVerified()) {
             if ($id != null) {

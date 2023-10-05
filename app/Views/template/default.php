@@ -63,28 +63,28 @@
 		}
 
 		.bg-light {
-			background-color: #7fac65 !important;
+			background-color: #eadcc2 !important;
 		}
 
 		.navbar-light .navbar-brand,
 		.navbar-light .navbar-brand:focus,
 		.navbar-light .navbar-brand:hover {
-			color: white !important;
+			color: #47693d !important;
 			font-family: math;
 			font-size: 18;
 		}
 
 		.navbar-light .navbar-nav .nav-link {
-			color: white !important;
+			color: #47693d !important;
 		}
 
 		.dropdown-menu {
-			color: white !important;
-			background-color: #7fac65 !important;
+			color: #47693d !important;
+			background-color: #eadcc2 !important;
 		}
 
 		.dropdown-item {
-			color: #ffffff;
+			color: #47693d;
 		}
 
 		.dropdown-menu .dropdown-item.active,
