@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <script src="./assets/kendo/js/jquery.min.js"></script>
+
+        <!-- HighCharts JS -->
+        <script src="./assets/highcharts/highcharts.js"></script>
+        <script src="./assets/highcharts/highcharts-more.js"></script>
+        <script src="./assets/highcharts/modules/solid-gauge.js"></script>
+        <script src="./assets/highcharts/modules/annotations.js"></script>
+        <script>
+            $(document).ready(function(e){
+                console.log("tes");
+                generateChart();
+            })
+
+            function generateChart(){
+                Highcharts.setOptions({
+                        lang: {
+                            numericSymbols: ["Rb", "Jt", "M", "T", "P", "E"]
+                        }
+                    });
+                    return new Highcharts.Chart("chart",
+                        {
+                            chart: {
+                                height: 250,
+                                scrollablePlotArea: {
+                                    minWidth: 400,
+                                    scrollPositionX: 1
+                                },
+                                marginRight: 0
+                            },
+                            credits: {
+                                enabled: false
+                            },
+                            title: {
+                                text: "Grafik Kegiatan"
+                            },
+                            xAxis: {
+                                categories : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                                scrollbar: {
+                                    enabled: true
+                                },
+                                gridLineDashStyle: 'dash',
+                                gridLineWidth: 1
+                            },
+                            yAxis: {
+                                title: {
+                                    text: 'Jumlah Kegiatan'
+                                }
+                            },
+                            plotOptions: {
+                                series: {
+                                    label: {
+                                        connectorAllowed: false
+                                    }
+                                }
+                            },
+                            navigation: {
+                                menuItemStyle: {
+                                    fontSize: '10px'
+                                }
+                            },
+                            series: [
+                                {
+                                    name: 'Patroli',
+                                    data: [61,56,0,56,70,69,81,106,52]
+                                },
+                                {
+                                    name: 'Deteksi Dini',
+                                    data: [32,33,0,33,30,29,42,78,40]
+                                },
+                                {
+                                    name: 'PAM VIP',
+                                    data: [32,34,0,34,31,31,42,63,33]
+                                },
+                                {
+                                    name: 'Pengamanan',
+                                    data: [17,3,0,3,2,4,3,13,7]
+                                },
+                                {
+                                    name: 'Unjuk Rasa & Kerusuhan Masa',
+                                    data: [0,0,0,0,0,0,0,1,0]
+                                },
+                                {
+                                    name: 'PPKS',
+                                    data: [35,19,0,19,22,23,23,16,2]
+                                },
+                                {
+                                    name: 'PKL',
+                                    data: [19,15,0,15,15,14,7,11,0]
+                                },
+                                {
+                                    name: 'Destinasi Wisata',
+                                    data: [0,1,0,1,1,0,0,0,0]
+                                },
+                            ],
+                        });
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Grafik Kegiatan</h2>
+        <div id="chart"></div>
+    </body>
+</html>
